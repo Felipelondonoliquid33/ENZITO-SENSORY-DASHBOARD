@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --color-japandi-bg: #E3EAD8; /* Más verdoso */
+  --color-japandi-surface: #FFFFFF;
+  --color-japandi-sage: #8A9A70; /* Salvia un poco más contrastante */
+  --color-japandi-wood: #D4A373;
+  --color-japandi-text: #2C3622;
+  --color-japandi-muted: #6B7562;
+  --color-japandi-border: #D0D7C6;
+}
+
+body {
+  background-color: var(--color-japandi-bg);
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(255,255,255,0.6) 0%, transparent 80%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Ctext x='20' y='40' font-size='35' opacity='0.25'%3E%F0%9F%A6%95%3C/text%3E%3Ctext x='100' y='120' font-size='35' opacity='0.25'%3E%F0%9F%A6%96%3C/text%3E%3Ctext x='70' y='80' font-size='20' opacity='0.15'%3E%F0%9F%8C%BF%3C/text%3E%3C/svg%3E");
+  background-attachment: fixed;
+  color: var(--color-japandi-text);
+  font-family: var(--font-sans);
+}
