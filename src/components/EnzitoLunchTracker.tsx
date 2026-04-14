@@ -3,54 +3,279 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Utensils, Droplets, Leaf, ChevronRight, Calendar, Info, CheckCircle2 } from 'lucide-react';
 import { cn } from '../lib/utils';
 
-interface DayMenu {
-  day: string;
-  plato: string;
+interface MealPlan {
+  desayuno: string;
+  almuerzo: string;
+  cena: string;
   ingredientes: string[];
   nivel_fibra: 'Bajo' | 'Medio' | 'Alto';
   tip_digestivo: string;
 }
 
 interface WeekMenu {
-  [key: number]: DayMenu;
+  [key: number]: MealPlan;
 }
 
 const LUNCH_RECIPES_DB: Record<string, WeekMenu> = {
   'Semana 1': {
-    1: { day: 'Lunes', plato: 'Puré de Lenteja Roja y Auyama', ingredientes: ['Lenteja pelada', 'Auyama', 'Aceite de oliva'], nivel_fibra: 'Alto', tip_digestivo: 'La lenteja roja no tiene hollejo, es más digestiva.' },
-    2: { day: 'Martes', plato: 'Pollo al vapor con Brócoli suave', ingredientes: ['Pechuga', 'Arbolitos de brócoli', 'Aguacate'], nivel_fibra: 'Alto', tip_digestivo: 'El aguacate es el mejor lubricante natural.' },
-    3: { day: 'Miércoles', plato: 'Crema de Calabacín y Pescado', ingredientes: ['Zucchini verde', 'Pescado blanco', 'Coco'], nivel_fibra: 'Medio', tip_digestivo: 'El calabacín tiene muchísima agua.' },
-    4: { day: 'Jueves', plato: 'Garbanzos licuados con Acelga', ingredientes: ['Garbanzo (remojado 24h)', 'Acelga', 'Oliva'], nivel_fibra: 'Alto', tip_digestivo: 'La acelga mantiene el movimiento intestinal.' },
-    5: { day: 'Viernes', plato: 'Risotto de Quinoa y Calabaza', ingredientes: ['Quinoa', 'Puré de calabaza', 'Queso fresco'], nivel_fibra: 'Medio', tip_digestivo: 'La quinoa tiene más fibra que el arroz blanco.' },
-    6: { day: 'Sábado', plato: 'Ternera magra con Habichuelas', ingredientes: ['Carne de res', 'Habichuelas tiernas', 'Aceite de girasol'], nivel_fibra: 'Medio', tip_digestivo: 'Cortar la habichuela transversalmente para la fibra.' },
-    0: { day: 'Domingo', plato: 'Sopa de Vegetales Amarillos', ingredientes: ['Auyama', 'Zanhoria', 'Pasta de estrellas'], nivel_fibra: 'Medio', tip_digestivo: 'Hidratación máxima para cerrar la semana.' },
+    1: { 
+      day: 'Lunes', 
+      desayuno: 'Papaya madura con Chía hidratada',
+      almuerzo: 'Puré de Lenteja Roja y Auyama', 
+      cena: 'Crema suave de Calabacín',
+      ingredientes: ['Lenteja pelada', 'Auyama', 'Aceite de oliva', 'Chía'], 
+      nivel_fibra: 'Alto', 
+      tip_digestivo: 'La lenteja roja no tiene hollejo, es más digestiva.' 
+    },
+    2: { 
+      day: 'Martes', 
+      desayuno: 'Avena en hojuelas con Pera',
+      almuerzo: 'Pollo al vapor con Brócoli suave', 
+      cena: 'Compota de Manzana natural',
+      ingredientes: ['Pechuga', 'Arbolitos de brócoli', 'Aguacate', 'Pera'], 
+      nivel_fibra: 'Alto', 
+      tip_digestivo: 'El aguacate es el mejor lubricante natural.' 
+    },
+    3: { 
+      day: 'Miércoles', 
+      desayuno: 'Granadilla con semillas (barrido)',
+      almuerzo: 'Crema de Calabacín y Pescado', 
+      cena: 'Puré de Batata dulce',
+      ingredientes: ['Zucchini verde', 'Pescado blanco', 'Coco', 'Granadilla'], 
+      nivel_fibra: 'Medio', 
+      tip_digestivo: 'El calabacín tiene muchísima agua.' 
+    },
+    4: { 
+      day: 'Jueves', 
+      desayuno: 'Pitahaya blanca picadita',
+      almuerzo: 'Garbanzos licuados con Acelga', 
+      cena: 'Sopita de pasta de estrellas',
+      ingredientes: ['Garbanzo (remojado 24h)', 'Acelga', 'Oliva', 'Pitahaya'], 
+      nivel_fibra: 'Alto', 
+      tip_digestivo: 'La acelga mantiene el movimiento intestinal.' 
+    },
+    5: { 
+      day: 'Viernes', 
+      desayuno: 'Yogurt natural con Kiwi',
+      almuerzo: 'Risotto de Quinoa y Calabaza', 
+      cena: 'Puré de Zanahoria y Pollo',
+      ingredientes: ['Quinoa', 'Puré de calabaza', 'Queso fresco', 'Kiwi'], 
+      nivel_fibra: 'Medio', 
+      tip_digestivo: 'La quinoa tiene más fibra que el arroz blanco.' 
+    },
+    6: { 
+      day: 'Sábado', 
+      desayuno: 'Panqueque de Avena y Banano maduro',
+      almuerzo: 'Ternera magra con Habichuelas', 
+      cena: 'Caldo de vegetales filtrado',
+      ingredientes: ['Carne de res', 'Habichuelas tiernas', 'Aceite de girasol', 'Avena'], 
+      nivel_fibra: 'Medio', 
+      tip_digestivo: 'Cortar la habichuela transversalmente para la fibra.' 
+    },
+    0: { 
+      day: 'Domingo', 
+      desayuno: 'Ciruelas pasas hidratadas',
+      almuerzo: 'Sopa de Vegetales Amarillos', 
+      cena: 'Puré de Auyama suave',
+      ingredientes: ['Auyama', 'Zanhoria', 'Pasta de estrellas', 'Ciruela'], 
+      nivel_fibra: 'Medio', 
+      tip_digestivo: 'Hidratación máxima para cerrar la semana.' 
+    },
   },
   'Semana 2': {
-    1: { day: 'Lunes', plato: 'Pavo con puré de Manzana y Pera', ingredientes: ['Pechuga de pavo', 'Pera madura', 'Manzana verde'], nivel_fibra: 'Alto', tip_digestivo: 'La pera madura es un laxante natural suave.' },
-    2: { day: 'Martes', plato: 'Arroz Integral con Espinacas', ingredientes: ['Arroz integral', 'Espinaca', 'Oliva'], nivel_fibra: 'Alto', tip_digestivo: 'El magnesio de la espinaca relaja el colon.' },
-    3: { day: 'Miércoles', plato: 'Pescado en salsa de Granadilla', ingredientes: ['Filete de pescado', 'Zumo de granadilla'], nivel_fibra: 'Alto', tip_digestivo: 'Las semillas de granadilla aportan fibra mecánica.' },
-    4: { day: 'Jueves', plato: 'Puré de Remolacha y Pollo', ingredientes: ['Remolacha cocida', 'Pollo', 'Aceite de coco'], nivel_fibra: 'Alto', tip_digestivo: 'La remolacha es excelente para el tránsito.' },
-    5: { day: 'Viernes', plato: 'Lentejas con trozos de Mango', ingredientes: ['Lentejas', 'Mango maduro', 'Cilantro'], nivel_fibra: 'Alto', tip_digestivo: 'La combinación de fibra y enzimas del mango ayuda.' },
-    6: { day: 'Sábado', plato: 'Crema de Espárragos y Huevo', ingredientes: ['Espárragos', 'Huevo cocido', 'Papa criolla'], nivel_fibra: 'Medio', tip_digestivo: 'El espárrago es un prebiótico natural.' },
-    0: { day: 'Domingo', plato: 'Pollo "Tropical" con Piña', ingredientes: ['Pollo', 'Trozos de piña', 'Arroz'], nivel_fibra: 'Medio', tip_digestivo: 'La bromelina de la piña ayuda a digerir proteínas.' },
+    1: { 
+      day: 'Lunes', 
+      desayuno: 'Batido de Pitahaya blanca',
+      almuerzo: 'Pavo con puré de Manzana y Pera', 
+      cena: 'Consomé de Pavo con verduras',
+      ingredientes: ['Pechuga de pavo', 'Pera madura', 'Manzana verde'], 
+      nivel_fibra: 'Alto', 
+      tip_digestivo: 'La pera madura es un laxante natural suave.' 
+    },
+    2: { 
+      day: 'Martes', 
+      desayuno: 'Papaya con chorrito de Limón',
+      almuerzo: 'Arroz Integral con Espinacas', 
+      cena: 'Tortilla de Espinaca (solo yema)',
+      ingredientes: ['Arroz integral', 'Espinaca', 'Oliva'], 
+      nivel_fibra: 'Alto', 
+      tip_digestivo: 'El magnesio de la espinaca relaja el colon.' 
+    },
+    3: { 
+      day: 'Miércoles', 
+      desayuno: 'Granadilla pura',
+      almuerzo: 'Pescado en salsa de Granadilla', 
+      cena: 'Puré de Papa criolla suave',
+      ingredientes: ['Filete de pescado', 'Zumo de granadilla'], 
+      nivel_fibra: 'Alto', 
+      tip_digestivo: 'Las semillas de granadilla aportan fibra mecánica.' 
+    },
+    4: { 
+      day: 'Jueves', 
+      desayuno: 'Avena con Ciruela pasa',
+      almuerzo: 'Puré de Remolacha y Pollo', 
+      cena: 'Crema de Remolacha fría',
+      ingredientes: ['Remolacha cocida', 'Pollo', 'Aceite de coco'], 
+      nivel_fibra: 'Alto', 
+      tip_digestivo: 'La remolacha es excelente para el tránsito.' 
+    },
+    5: { 
+      day: 'Viernes', 
+      desayuno: 'Mango maduro picado',
+      almuerzo: 'Lentejas con trozos de Mango', 
+      cena: 'Sopa de Lentejas licuada',
+      ingredientes: ['Lentejas', 'Mango maduro', 'Cilantro'], 
+      nivel_fibra: 'Alto', 
+      tip_digestivo: 'La combinación de fibra y enzimas del mango ayuda.' 
+    },
+    6: { 
+      day: 'Sábado', 
+      desayuno: 'Compota de Pera y Canela',
+      almuerzo: 'Crema de Espárragos y Huevo', 
+      cena: 'Huevo poché con Aguacate',
+      ingredientes: ['Espárragos', 'Huevo cocido', 'Papa criolla'], 
+      nivel_fibra: 'Medio', 
+      tip_digestivo: 'El espárrago es un prebiótico natural.' 
+    },
+    0: { 
+      day: 'Domingo', 
+      desayuno: 'Jugo de Piña natural',
+      almuerzo: 'Pollo "Tropical" con Piña', 
+      cena: 'Arroz blanco con Coco',
+      ingredientes: ['Pollo', 'Trozos de piña', 'Arroz'], 
+      nivel_fibra: 'Medio', 
+      tip_digestivo: 'La bromelina de la piña ayuda a digerir proteínas.' 
+    },
   },
   'Semana 3': {
-    1: { day: 'Lunes', plato: 'Cerdo magro con puré de Papaya', ingredientes: ['Lomo de cerdo', 'Papaya madura', 'Limón'], nivel_fibra: 'Alto', tip_digestivo: 'La papaya tiene papaína, que acelera la digestión.' },
-    2: { day: 'Martes', plato: 'Pasta de Trigo Sarraceno con Pesto', ingredientes: ['Pasta de grano', 'Albahaca', 'Nuez', 'Oliva'], nivel_fibra: 'Medio', tip_digestivo: 'El pesto aporta grasas saludables y fibra.' },
-    3: { day: 'Miércoles', plato: 'Pollo con Compota de Ciruela Pasa', ingredientes: ['Pollo', 'Ciruela pasa hidratada'], nivel_fibra: 'Alto', tip_digestivo: 'La ciruela es el laxante por excelencia (sorbitol).' },
-    4: { day: 'Jueves', plato: 'Puré de Batata y Acelga', ingredientes: ['Batata dulce', 'Acelga', 'Aceite de oliva'], nivel_fibra: 'Alto', tip_digestivo: 'La batata tiene fibra soluble de alta calidad.' },
-    5: { day: 'Viernes', plato: 'Pescado con Ensalada de Tomate', ingredientes: ['Pescado blanco', 'Tomate', 'Aguacate'], nivel_fibra: 'Medio', tip_digestivo: 'El tomate aporta mucha agua al proceso.' },
-    6: { day: 'Sábado', plato: 'Guiso de Arvejas (sin piel)', ingredientes: ['Arveja verde', 'Pollo', 'Zanahoria'], nivel_fibra: 'Medio', tip_digestivo: 'Licuar las arvejas si aún no mastica bien.' },
-    0: { day: 'Domingo', plato: 'Crema de Auyama y Chía', ingredientes: ['Auyama', 'Chía hidratada'], nivel_fibra: 'Alto', tip_digestivo: 'La chía crea un gel que ayuda a deslizar las heces.' },
+    1: { 
+      day: 'Lunes', 
+      desayuno: 'Papaya con Chía',
+      almuerzo: 'Cerdo magro con puré de Papaya', 
+      cena: 'Lomo de cerdo desmechado',
+      ingredientes: ['Lomo de cerdo', 'Papaya madura', 'Limón'], 
+      nivel_fibra: 'Alto', 
+      tip_digestivo: 'La papaya tiene papaína, que acelera la digestión.' 
+    },
+    2: { 
+      day: 'Martes', 
+      desayuno: 'Tostada integral con Aguacate',
+      almuerzo: 'Pasta de Trigo Sarraceno con Pesto', 
+      cena: 'Sopa de Albahaca y Tomate',
+      ingredientes: ['Pasta de grano', 'Albahaca', 'Nuez', 'Oliva'], 
+      nivel_fibra: 'Medio', 
+      tip_digestivo: 'El pesto aporta grasas saludables y fibra.' 
+    },
+    3: { 
+      day: 'Miércoles', 
+      desayuno: 'Compota de Ciruela Pasa',
+      almuerzo: 'Pollo con Compota de Ciruela Pasa', 
+      cena: 'Pollo desmechado con Oliva',
+      ingredientes: ['Pollo', 'Ciruela pasa hidratada'], 
+      nivel_fibra: 'Alto', 
+      tip_digestivo: 'La ciruela es el laxante por excelencia (sorbitol).' 
+    },
+    4: { 
+      day: 'Jueves', 
+      desayuno: 'Puré de Batata con Coco',
+      almuerzo: 'Puré de Batata y Acelga', 
+      cena: 'Acelgas salteadas con ajo',
+      ingredientes: ['Batata dulce', 'Acelga', 'Aceite de oliva'], 
+      nivel_fibra: 'Alto', 
+      tip_digestivo: 'La batata tiene fibra soluble de alta calidad.' 
+    },
+    5: { 
+      day: 'Viernes', 
+      desayuno: 'Tomate cherry picado',
+      almuerzo: 'Pescado con Ensalada de Tomate', 
+      cena: 'Ceviche de pescado blanco natural',
+      ingredientes: ['Pescado blanco', 'Tomate', 'Aguacate'], 
+      nivel_fibra: 'Medio', 
+      tip_digestivo: 'El tomate aporta mucha agua al proceso.' 
+    },
+    6: { 
+      day: 'Sábado', 
+      desayuno: 'Arvejas frescas hervidas',
+      almuerzo: 'Guiso de Arvejas (sin piel)', 
+      cena: 'Crema de Arvejas licuada',
+      ingredientes: ['Arveja verde', 'Pollo', 'Zanahoria'], 
+      nivel_fibra: 'Medio', 
+      tip_digestivo: 'Licuar las arvejas si aún no mastica bien.' 
+    },
+    0: { 
+      day: 'Domingo', 
+      desayuno: 'Semillas de Chía en Jugo',
+      almuerzo: 'Crema de Auyama y Chía', 
+      cena: 'Sopa de Auyama y Cilantro',
+      ingredientes: ['Auyama', 'Chía hidratada'], 
+      nivel_fibra: 'Alto', 
+      tip_digestivo: 'La chía crea un gel que ayuda a deslizar las heces.' 
+    },
   },
   'Semana 4': {
-    1: { day: 'Lunes', plato: 'Salmón con Brócoli', ingredientes: ['Salmón', 'Brócoli', 'Aceite de oliva'], nivel_fibra: 'Alto', tip_digestivo: 'El Omega 3 desinflama el tracto digestivo.' },
-    2: { day: 'Martes', plato: 'Puré de Coliflor y Pollo', ingredientes: ['Coliflor', 'Pollo', 'Mantequilla natural'], nivel_fibra: 'Medio', tip_digestivo: 'La coliflor es alta en fibra y baja en grasa.' },
-    3: { day: 'Miércoles', plato: 'Pollo con puré de Pitahaya Roja', ingredientes: ['Pollo', 'Pitahaya roja triturada'], nivel_fibra: 'Alto', tip_digestivo: 'La pitahaya es el "botón de reinicio" intestinal.' },
-    4: { day: 'Jueves', plato: 'Arroz con Coco y Habichuelas', ingredientes: ['Arroz', 'Leche de coco', 'Habichuelas'], nivel_fibra: 'Medio', tip_digestivo: 'El aceite de coco ayuda mucho con el estreñimiento.' },
-    5: { day: 'Viernes', plato: 'Crema de Espinacas y Papa', ingredientes: ['Espinaca baby', 'Papa', 'Aceite de oliva'], nivel_fibra: 'Medio', tip_digestivo: 'Clásico para suavizar el tránsito.' },
-    6: { day: 'Sábado', plato: 'Albóndigas de Pollo y Calabacín', ingredientes: ['Pollo molido', 'Zucchini rallado', 'Tomate'], nivel_fibra: 'Medio', tip_digestivo: 'Esconder la verdura asegura la ingesta de fibra.' },
-    0: { day: 'Domingo', plato: 'Banano maduro y Auyama cocida', ingredientes: ['Banano muy maduro', 'Auyama', 'Aceite de oliva'], nivel_fibra: 'Medio', tip_digestivo: 'Solo usar banano MUY maduro (pecoso).' },
+    1: { 
+      day: 'Lunes', 
+      desayuno: 'Yogurt con Brócoli picado',
+      almuerzo: 'Salmón con Brócoli', 
+      cena: 'Salmón al horno con limón',
+      ingredientes: ['Salmón', 'Brócoli', 'Aceite de oliva'], 
+      nivel_fibra: 'Alto', 
+      tip_digestivo: 'El Omega 3 desinflama el tracto digestivo.' 
+    },
+    2: { 
+      day: 'Martes', 
+      desayuno: 'Coliflor al vapor tierno',
+      almuerzo: 'Puré de Coliflor y Pollo', 
+      cena: 'Consomé de Pollo y Coliflor',
+      ingredientes: ['Coliflor', 'Pollo', 'Mantequilla natural'], 
+      nivel_fibra: 'Medio', 
+      tip_digestivo: 'La coliflor es alta en fibra y baja en grasa.' 
+    },
+    3: { 
+      day: 'Miércoles', 
+      desayuno: 'Pitahaya Roja fresca',
+      almuerzo: 'Pollo con puré de Pitahaya Roja', 
+      cena: 'Gelatina de Pitahaya natural',
+      ingredientes: ['Pollo', 'Pitahaya roja triturada'], 
+      nivel_fibra: 'Alto', 
+      tip_digestivo: 'La pitahaya es el "botón de reinicio" intestinal.' 
+    },
+    4: { 
+      day: 'Jueves', 
+      desayuno: 'Coco fresco rallado',
+      almuerzo: 'Arroz con Coco y Habichuelas', 
+      cena: 'Habichuelas al vapor con Coco',
+      ingredientes: ['Arroz', 'Leche de coco', 'Habichuelas'], 
+      nivel_fibra: 'Medio', 
+      tip_digestivo: 'El aceite de coco ayuda mucho con el estreñimiento.' 
+    },
+    5: { 
+      day: 'Viernes', 
+      desayuno: 'Espinaca baby con Pera',
+      almuerzo: 'Crema de Espinacas y Papa', 
+      cena: 'Puré de Papa y Oliva',
+      ingredientes: ['Espinaca baby', 'Papa', 'Aceite de oliva'], 
+      nivel_fibra: 'Medio', 
+      tip_digestivo: 'Clásico para suavizar el tránsito.' 
+    },
+    6: { 
+      day: 'Sábado', 
+      desayuno: 'Zucchini rallado con miel (poca)',
+      almuerzo: 'Albóndigas de Pollo y Calabacín', 
+      cena: 'Sopa de Albóndigas suave',
+      ingredientes: ['Pollo molido', 'Zucchini rallado', 'Tomate'], 
+      nivel_fibra: 'Medio', 
+      tip_digestivo: 'Esconder la verdura asegura la ingesta de fibra.' 
+    },
+    0: { 
+      day: 'Domingo', 
+      desayuno: 'Banano maduro y Auyama',
+      almuerzo: 'Banano maduro y Auyama cocida', 
+      cena: 'Batido de Auyama y Leche maternal',
+      ingredientes: ['Banano muy maduro', 'Auyama', 'Aceite de oliva'], 
+      nivel_fibra: 'Medio', 
+      tip_digestivo: 'Solo usar banano MUY maduro (pecoso).' 
+    },
   }
 };
 
@@ -154,7 +379,37 @@ export function EnzitoLunchTracker() {
             <div className="space-y-6">
               <div>
                 <span className="text-japandi-sage text-xs font-bold uppercase tracking-widest">{currentMenu.day}</span>
-                <h2 className="text-2xl font-semibold text-japandi-text mt-1">{currentMenu.plato}</h2>
+                <div className="mt-4 space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="mt-1 w-6 h-6 rounded-lg bg-orange-100 flex items-center justify-center shrink-0">
+                      <span className="text-[10px] font-bold text-orange-600">D</span>
+                    </div>
+                    <div>
+                      <p className="text-[10px] font-bold text-japandi-muted uppercase">Desayuno</p>
+                      <p className="text-lg font-medium text-japandi-text">{currentMenu.desayuno}</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-3">
+                    <div className="mt-1 w-6 h-6 rounded-lg bg-japandi-sage/20 flex items-center justify-center shrink-0">
+                      <span className="text-[10px] font-bold text-japandi-sage">A</span>
+                    </div>
+                    <div>
+                      <p className="text-[10px] font-bold text-japandi-muted uppercase">Almuerzo</p>
+                      <p className="text-xl font-semibold text-japandi-text">{currentMenu.almuerzo}</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <div className="mt-1 w-6 h-6 rounded-lg bg-blue-100 flex items-center justify-center shrink-0">
+                      <span className="text-[10px] font-bold text-blue-600">C</span>
+                    </div>
+                    <div>
+                      <p className="text-[10px] font-bold text-japandi-muted uppercase">Cena</p>
+                      <p className="text-lg font-medium text-japandi-text">{currentMenu.cena}</p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div className="flex gap-4">
