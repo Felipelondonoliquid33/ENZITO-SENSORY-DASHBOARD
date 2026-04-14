@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import { ShoppingCart, Plus, Trash2, CheckCircle } from 'lucide-react';
+import { ShoppingCart, Plus, Trash2, CheckCircle, CalendarCheck } from 'lucide-react';
 import { cn } from '../lib/utils';
 import { LUNCH_RECIPES_DB } from '../data/lunchDB';
+import { usePlanWeek } from '../hooks/usePlanWeek';
 
 interface ListItem {
   id: string;
@@ -10,7 +11,8 @@ interface ListItem {
 }
 
 export function EnzitoEssentials() {
-  const [currentWeek, setCurrentWeek] = useState('Semana 1');
+  const { planInfo } = usePlanWeek();
+  const [currentWeek, setCurrentWeek] = useState(() => planInfo?.week ?? 'Semana 1');
   const [listItems, setListItems] = useState<ListItem[]>(() => {
     if (typeof window === 'undefined') return [];
     try {
@@ -61,6 +63,17 @@ export function EnzitoEssentials() {
         </h1>
         <p className="text-xs text-japandi-muted font-medium">Lista de compras y pendientes de Enzito</p>
       </header>
+
+      {/* Plan week banner */}
+      {planInfo && (
+        <div className="bg-japandi-sage/10 border border-japandi-sage/20 rounded-[2.5rem] px-6 py-4 flex items-center gap-3">
+          <CalendarCheck className="w-5 h-5 text-japandi-sage flex-shrink-0" />
+          <div>
+            <p className="text-[9px] font-black uppercase tracking-[0.25em] text-japandi-sage">Semana actual del plan</p>
+            <p className="text-base font-black text-japandi-text">{planInfo.week} &middot; Dia {planInfo.daysElapsed + 1}</p>
+          </div>
+        </div>
+      )}
 
       {/* Grocery List */}
       <div className="bg-japandi-surface/30 rounded-[3rem] p-8 border border-japandi-border/30">

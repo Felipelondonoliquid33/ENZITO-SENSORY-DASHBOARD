@@ -1,15 +1,29 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Utensils, Leaf, X, Heart } from 'lucide-react';
+import { Utensils, Leaf, X, Heart, CalendarCheck } from 'lucide-react';
 import { cn } from '../lib/utils';
 import { LUNCH_RECIPES_DB, type RecipeDetails } from '../data/lunchDB';
+import { usePlanWeek } from '../hooks/usePlanWeek';
 
 export function EnzitoLunchTracker() {
-  const [currentWeek, setCurrentWeek] = useState('Semana 1');
+  const { planInfo, startDate, setPlanStart, resetPlan } = usePlanWeek();
+  const [currentWeek, setCurrentWeek] = useState(() => planInfo?.week ?? 'Semana 1');
   const [selectedDay, setSelectedDay] = useState(new Date().getDay());
   const [selectedRecipe, setSelectedRecipe] = useState<{ name: string; details: RecipeDetails } | null>(null);
+  const [showSetup, setShowSetup] = useState(false);
+  const [dateInput, setDateInput] = useState('');
 
   const currentMenu = LUNCH_RECIPES_DB[currentWeek]?.[selectedDay] || LUNCH_RECIPES_DB['Semana 1'][1];
+
+  const handleSetStart = () => {
+    if (!dateInput) return;
+    setPlanStart(new Date(dateInput));
+    const updated = new Date(dateInput);
+    const days = Math.floor((Date.now() - updated.getTime()) / 86400000);
+    const idx = Math.floor(days / 7) % 4;
+    setCurrentWeek(['Semana 1','Semana 2','Semana 3','Semana 4'][idx >= 0 ? idx : 0]);
+    setShowSetup(false);
+  };
 
   return (
     <div className="max-w-md mx-auto p-6 space-y-6 pb-28 text-japandi-text">
@@ -19,6 +33,56 @@ export function EnzitoLunchTracker() {
         </h1>
         <p className="text-xs text-japandi-muted font-medium">Menu semanal de Enzito</p>
       </header>
+
+      {/* Plan week banner */}
+      {planInfo ? (
+        <div className="bg-japandi-sage text-white rounded-[2.5rem] px-6 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <CalendarCheck className="w-5 h-5 flex-shrink-0" />
+            <div>
+              <p className="text-[9px] font-black uppercase tracking-[0.25em] opacity-80">Semana actual del plan</p>
+              <p className="text-lg font-black leading-tight">{planInfo.week} · Dia {planInfo.daysElapsed + 1}</p>
+            </div>
+          </div>
+          <button type="button" onClick={() => { resetPlan(); setShowSetup(true); }} className="text-[9px] font-black uppercase tracking-widest opacity-70 hover:opacity-100 underline">
+            Cambiar
+          </button>
+        </div>
+      ) : (
+        <button
+          type="button"
+          onClick={() => setShowSetup(true)}
+          className="w-full border-2 border-dashed border-japandi-sage/40 rounded-[2.5rem] px-6 py-5 flex items-center gap-3 text-left hover:border-japandi-sage/70 transition-colors"
+        >
+          <CalendarCheck className="w-5 h-5 text-japandi-sage flex-shrink-0" />
+          <div>
+            <p className="text-sm font-black text-japandi-text">Configura el inicio del plan</p>
+            <p className="text-[11px] text-japandi-muted">Para saber en que semana estas</p>
+          </div>
+        </button>
+      )}
+
+      {/* Setup modal */}
+      <AnimatePresence>
+        {showSetup && (
+          <div className="fixed inset-0 z-[999] flex items-end justify-center px-4">
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setShowSetup(false)} className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+            <motion.div initial={{ y: '100%' }} animate={{ y: 0 }} exit={{ y: '100%' }} transition={{ type: 'spring', damping: 25, stiffness: 200 }} className="relative w-full max-w-md bg-white rounded-t-[3rem] p-8 pb-12 shadow-2xl">
+              <h2 className="text-xl font-black text-japandi-text mb-2">Fecha de inicio del plan</h2>
+              <p className="text-xs text-japandi-muted mb-6">Cuando empezo el plan de 4 semanas de Enzito?</p>
+              <input
+                type="date"
+                value={dateInput}
+                onChange={(e) => setDateInput(e.target.value)}
+                className="w-full bg-japandi-surface rounded-2xl px-5 py-4 text-sm font-bold border-none outline-none mb-4"
+              />
+              <button type="button" onClick={handleSetStart} className="w-full bg-japandi-text text-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest">
+                Guardar
+              </button>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
 
       <div className="flex bg-japandi-surface/50 p-1 rounded-2xl border border-japandi-border/50 overflow-x-auto gap-1">
         {['Semana 1', 'Semana 2', 'Semana 3', 'Semana 4'].map((week) => (
