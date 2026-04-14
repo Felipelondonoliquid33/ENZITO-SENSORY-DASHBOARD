@@ -23,7 +23,7 @@ const LUNCH_RECIPES_DB: Record<string, WeekMenu> = {
       desayuno: 'Papaya madura con Chía hidratada',
       almuerzo: 'Puré de Lenteja Roja y Auyama', 
       cena: 'Crema suave de Calabacín',
-      ingredientes: ['Lenteja pelada', 'Auyama', 'Aceite de oliva', 'Chía'], 
+      ingredientes: ['Lenteja pelada', 'Auyama', 'Aceite de oliva'], 
       nivel_fibra: 'Alto', 
       tip_digestivo: 'La lenteja roja no tiene hollejo, es más digestiva.' 
     },
@@ -32,7 +32,7 @@ const LUNCH_RECIPES_DB: Record<string, WeekMenu> = {
       desayuno: 'Avena en hojuelas con Pera',
       almuerzo: 'Pollo al vapor con Brócoli suave', 
       cena: 'Compota de Manzana natural',
-      ingredientes: ['Pechuga', 'Arbolitos de brócoli', 'Aguacate', 'Pera'], 
+      ingredientes: ['Pechuga', 'Arbolitos de brócoli', 'Aguacate'], 
       nivel_fibra: 'Alto', 
       tip_digestivo: 'El aguacate es el mejor lubricante natural.' 
     },
@@ -41,7 +41,7 @@ const LUNCH_RECIPES_DB: Record<string, WeekMenu> = {
       desayuno: 'Granadilla con semillas (barrido)',
       almuerzo: 'Crema de Calabacín y Pescado', 
       cena: 'Puré de Batata dulce',
-      ingredientes: ['Zucchini verde', 'Pescado blanco', 'Coco', 'Granadilla'], 
+      ingredientes: ['Zucchini verde', 'Pescado blanco', 'Coco'], 
       nivel_fibra: 'Medio', 
       tip_digestivo: 'El calabacín tiene muchísima agua.' 
     },
@@ -50,16 +50,16 @@ const LUNCH_RECIPES_DB: Record<string, WeekMenu> = {
       desayuno: 'Pitahaya blanca picadita',
       almuerzo: 'Garbanzos licuados con Acelga', 
       cena: 'Sopita de pasta de estrellas',
-      ingredientes: ['Garbanzo (remojado 24h)', 'Acelga', 'Oliva', 'Pitahaya'], 
+      ingredientes: ['Garbanzo (remojado 24h)', 'Acelga', 'Oliva'], 
       nivel_fibra: 'Alto', 
-      tip_digestivo: 'La acelga mantiene el movimiento intestinal.' 
+      tip_digestivo: 'La acelga estimula el movimiento intestinal.' 
     },
     5: { 
       day: 'Viernes', 
       desayuno: 'Yogurt natural con Kiwi',
       almuerzo: 'Risotto de Quinoa y Calabaza', 
       cena: 'Puré de Zanahoria y Pollo',
-      ingredientes: ['Quinoa', 'Puré de calabaza', 'Queso fresco', 'Kiwi'], 
+      ingredientes: ['Quinoa', 'Puré de calabaza', 'Queso fresco'], 
       nivel_fibra: 'Medio', 
       tip_digestivo: 'La quinoa tiene más fibra que el arroz blanco.' 
     },
@@ -68,7 +68,7 @@ const LUNCH_RECIPES_DB: Record<string, WeekMenu> = {
       desayuno: 'Panqueque de Avena y Banano maduro',
       almuerzo: 'Ternera magra con Habichuelas', 
       cena: 'Caldo de vegetales filtrado',
-      ingredientes: ['Carne de res', 'Habichuelas tiernas', 'Aceite de girasol', 'Avena'], 
+      ingredientes: ['Carne de res', 'Habichuelas tiernas', 'Aceite de girasol'], 
       nivel_fibra: 'Medio', 
       tip_digestivo: 'Cortar la habichuela transversalmente para la fibra.' 
     },
@@ -77,7 +77,7 @@ const LUNCH_RECIPES_DB: Record<string, WeekMenu> = {
       desayuno: 'Ciruelas pasas hidratadas',
       almuerzo: 'Sopa de Vegetales Amarillos', 
       cena: 'Puré de Auyama suave',
-      ingredientes: ['Auyama', 'Zanhoria', 'Pasta de estrellas', 'Ciruela'], 
+      ingredientes: ['Auyama', 'Zanahoria', 'Pasta de estrellas'], 
       nivel_fibra: 'Medio', 
       tip_digestivo: 'Hidratación máxima para cerrar la semana.' 
     },
