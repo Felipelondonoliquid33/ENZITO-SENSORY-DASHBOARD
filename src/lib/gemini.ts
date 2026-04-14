@@ -1,6 +1,7 @@
 import { GoogleGenAI, Chat } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+const apiKey = (process.env.GEMINI_API_KEY || (import.meta as any).env?.VITE_GEMINI_API_KEY) as string;
+const ai = new GoogleGenAI({ apiKey });
 
 export function createTutorChat(exerciseTitle: string, exerciseDescription: string): Chat {
   return ai.chats.create({
