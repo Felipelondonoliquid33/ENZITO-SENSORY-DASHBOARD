@@ -1,8 +1,8 @@
-import { Home, CalendarDays, Bot, Utensils } from 'lucide-react';
+import { Home, CalendarDays, ShoppingCart, Utensils } from 'lucide-react';
 import { cn } from '../lib/utils';
 import { motion } from 'motion/react';
 
-export type Tab = 'dashboard' | 'program' | 'lunch' | 'tutor';
+export type Tab = 'dashboard' | 'program' | 'lunch' | 'essentials';
 
 interface BottomNavProps {
   activeTab: Tab;
@@ -70,21 +70,21 @@ export function BottomNav({ activeTab, onChange }: BottomNavProps) {
           </button>
 
           <button
-            onClick={() => onChange('tutor')}
+            onClick={() => onChange('essentials')}
             className={cn(
               "relative flex items-center justify-center gap-2 px-3 py-3 rounded-full transition-colors duration-300 flex-1",
-              activeTab === 'tutor' ? "text-japandi-text" : "text-japandi-muted hover:text-japandi-text"
+              activeTab === 'essentials' ? "text-japandi-text" : "text-japandi-muted hover:text-japandi-text"
             )}
           >
-            {activeTab === 'tutor' && (
+            {activeTab === 'essentials' && (
               <motion.div
                 layoutId="nav-pill"
                 className="absolute inset-0 bg-japandi-bg rounded-full"
                 transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
               />
             )}
-            <Bot className="w-5 h-5 relative z-10" />
-            <span className="text-xs font-medium relative z-10 hidden sm:inline">Tutor IA</span>
+            <ShoppingCart className="w-5 h-5 relative z-10" />
+            <span className="text-xs font-medium relative z-10 hidden sm:inline">Essentials</span>
           </button>
 
         </div>

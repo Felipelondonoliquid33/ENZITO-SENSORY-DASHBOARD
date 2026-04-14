@@ -6,8 +6,8 @@
 import { useState } from 'react';
 import { Dashboard } from './components/Dashboard';
 import { WeeklyProgram } from './components/WeeklyProgram';
-import { AITutorPage } from './components/AITutorPage';
 import { EnzitoLunchTracker } from './components/EnzitoLunchTracker';
+import { EnzitoEssentials } from './components/EnzitoEssentials';
 import { BottomNav, Tab } from './components/BottomNav';
 
 export default function App() {
@@ -18,7 +18,7 @@ export default function App() {
       {activeTab === 'dashboard' && <Dashboard />}
       {activeTab === 'program' && <WeeklyProgram />}
       {activeTab === 'lunch' && <EnzitoLunchTracker />}
-      {activeTab === 'tutor' && <AITutorPage />}
+      {activeTab === 'essentials' && <EnzitoEssentials />}
       <BottomNav activeTab={activeTab} onChange={setActiveTab} />
     </div>
   );
