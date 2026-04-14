@@ -1,8 +1,8 @@
-import { Home, CalendarDays, Bot } from 'lucide-react';
+import { Home, CalendarDays, Bot, Utensils } from 'lucide-react';
 import { cn } from '../lib/utils';
 import { motion } from 'motion/react';
 
-export type Tab = 'dashboard' | 'program' | 'tutor';
+export type Tab = 'dashboard' | 'program' | 'lunch' | 'tutor';
 
 interface BottomNavProps {
   activeTab: Tab;
@@ -18,7 +18,7 @@ export function BottomNav({ activeTab, onChange }: BottomNavProps) {
           <button
             onClick={() => onChange('dashboard')}
             className={cn(
-              "relative flex items-center justify-center gap-2 px-4 py-3 rounded-full transition-colors duration-300 flex-1",
+              "relative flex items-center justify-center gap-2 px-3 py-3 rounded-full transition-colors duration-300 flex-1",
               activeTab === 'dashboard' ? "text-japandi-text" : "text-japandi-muted hover:text-japandi-text"
             )}
           >
@@ -30,13 +30,13 @@ export function BottomNav({ activeTab, onChange }: BottomNavProps) {
               />
             )}
             <Home className="w-5 h-5 relative z-10" />
-            <span className="text-sm font-medium relative z-10 hidden sm:inline">Hoy</span>
+            <span className="text-xs font-medium relative z-10 hidden sm:inline">Hoy</span>
           </button>
 
           <button
             onClick={() => onChange('program')}
             className={cn(
-              "relative flex items-center justify-center gap-2 px-4 py-3 rounded-full transition-colors duration-300 flex-1",
+              "relative flex items-center justify-center gap-2 px-3 py-3 rounded-full transition-colors duration-300 flex-1",
               activeTab === 'program' ? "text-japandi-text" : "text-japandi-muted hover:text-japandi-text"
             )}
           >
@@ -48,13 +48,31 @@ export function BottomNav({ activeTab, onChange }: BottomNavProps) {
               />
             )}
             <CalendarDays className="w-5 h-5 relative z-10" />
-            <span className="text-sm font-medium relative z-10 hidden sm:inline">Programa</span>
+            <span className="text-xs font-medium relative z-10 hidden sm:inline">Programa</span>
+          </button>
+
+          <button
+            onClick={() => onChange('lunch')}
+            className={cn(
+              "relative flex items-center justify-center gap-2 px-3 py-3 rounded-full transition-colors duration-300 flex-1",
+              activeTab === 'lunch' ? "text-japandi-text" : "text-japandi-muted hover:text-japandi-text"
+            )}
+          >
+            {activeTab === 'lunch' && (
+              <motion.div
+                layoutId="nav-pill"
+                className="absolute inset-0 bg-japandi-bg rounded-full"
+                transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+              />
+            )}
+            <Utensils className="w-5 h-5 relative z-10" />
+            <span className="text-xs font-medium relative z-10 hidden sm:inline">Menú</span>
           </button>
 
           <button
             onClick={() => onChange('tutor')}
             className={cn(
-              "relative flex items-center justify-center gap-2 px-4 py-3 rounded-full transition-colors duration-300 flex-1",
+              "relative flex items-center justify-center gap-2 px-3 py-3 rounded-full transition-colors duration-300 flex-1",
               activeTab === 'tutor' ? "text-japandi-text" : "text-japandi-muted hover:text-japandi-text"
             )}
           >
@@ -66,7 +84,7 @@ export function BottomNav({ activeTab, onChange }: BottomNavProps) {
               />
             )}
             <Bot className="w-5 h-5 relative z-10" />
-            <span className="text-sm font-medium relative z-10 hidden sm:inline">Tutor IA</span>
+            <span className="text-xs font-medium relative z-10 hidden sm:inline">Tutor IA</span>
           </button>
 
         </div>
