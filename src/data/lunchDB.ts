@@ -27,45 +27,45 @@ export const LUNCH_RECIPES_DB: Record<string, WeekMenu> = {
   'Semana 1': {
     1: {
       day: 'Lunes',
-      desayuno: 'Papaya madura con Chia hidratada',
+      desayuno: 'Papaya en cubos',
       desayuno_detalle: {
-        preparacion: 'Hidratar 1 cdta de chia en 4 cdas de agua por 15 min. Mezclar con papaya en cubos.',
-        beneficios: { nutricional: 'Vitamina A/C + Omega 3', digestivo: 'Papaina + hidratacion' }
+        preparacion: 'Cortar papaya madura, servir fría.',
+        beneficios: { nutricional: 'Vitamina C', digestivo: 'Papaina enzimática' }
       },
-      almuerzo: 'Salmon al Vapor con Caldo de Vegetales',
+      almuerzo: 'Salmon hervido en caldo + arroz',
       almuerzo_detalle: {
-        preparacion: 'Salmon fresco cortado fino al vapor 10 min. Servir en caldo casero de zanahoria y apio.',
-        beneficios: { nutricional: 'Omega 3 + DHA cerebral', digestivo: 'Lubrica intestinos + hidratacion' }
+        preparacion: 'Hervir salmon 8 min en agua con sal. Servir con caldo y arroz cocido.',
+        beneficios: { nutricional: 'Omega 3 + proteina', digestivo: 'Hidratacion' }
       },
-      cena: 'Sopa Cremosa de Coliflor con Pescado Blanco',
+      cena: 'Sopa tilapia + fideos',
       cena_detalle: {
-        preparacion: 'Coliflor hervida licuada con tilapia desmenuzada y caldo. Textura sedosa.',
-        beneficios: { nutricional: 'Proteina + Vitamina C', digestivo: '98% liquido, ultra suave' }
+        preparacion: 'Tilapia hervida en caldo. Agregar fideos 5 min. Listo.',
+        beneficios: { nutricional: 'Proteina marina', digestivo: 'Suave' }
       },
-      ingredientes: ['Salmon', 'Tilapia', 'Coliflor', 'Caldo casero'],
+      ingredientes: ['Salmon', 'Tilapia', 'Arroz', 'Fideos'],
       nivel_fibra: 'Bajo',
-      tip_digestivo: 'Pescado diario + liquidos = barriga feliz.'
+      tip_digestivo: '⏱️ 15 min total.'
     },
     2: {
       day: 'Martes',
-      desayuno: 'Pera madura rallada en Caldo de Verduras',
+      desayuno: 'Pera cocida',
       desayuno_detalle: {
-        preparacion: 'Calentar caldo casero. Agregar pera rallada fina sin cascara. Muy liquido.',
-        beneficios: { nutricional: 'Sorbitol laxante + minerales', digestivo: 'Activa intestinos suavemente' }
+        preparacion: 'Hervir pera 5 min. Servir en el agua de cocción.',
+        beneficios: { nutricional: 'Sorbitol', digestivo: 'Laxante natural' }
       },
-      almuerzo: 'Tilapia al Papillot con Pure de Calabaza y Caldo',
+      almuerzo: 'Merluza al vapor + caldo con zanahoria',
       almuerzo_detalle: {
-        preparacion: 'Tilapia en papel aluminio 12 min. Servir con calabaza licuada en caldo de pollo.',
-        beneficios: { nutricional: 'Omega 3 completo + betacarotenos', digestivo: 'Lubricante triple' }
+        preparacion: 'Merluza al vapor 8 min. Caldo con zanahoria cocida.',
+        beneficios: { nutricional: 'Proteina + betacaroteno', digestivo: 'Facil' }
       },
-      cena: 'Sopa de Pescado Desmenuzado con Fideos Finos',
+      cena: 'Caldo de pescado + noodles',
       cena_detalle: {
-        preparacion: 'Caldo de pescado casero con merluza cocida y desmenuzada + fideos muy finos.',
-        beneficios: { nutricional: 'Colageno marino + proteina', digestivo: 'Hidratacion maxima' }
+        preparacion: 'Caldo de pescado. Noodles 3 min. Listo.',
+        beneficios: { nutricional: 'Colageno', digestivo: 'Reconfortante' }
       },
-      ingredientes: ['Tilapia', 'Merluza', 'Calabaza', 'Caldo casero'],
+      ingredientes: ['Merluza', 'Zanahoria', 'Noodles', 'Caldo'],
       nivel_fibra: 'Bajo',
-      tip_digestivo: 'Caldo casero cada comida = sistema digestivo feliz.'
+      tip_digestivo: '⏱️ 15 min.'
     },
     3: {
       day: 'Miercoles',
@@ -111,70 +111,96 @@ export const LUNCH_RECIPES_DB: Record<string, WeekMenu> = {
     },
     5: {
       day: 'Viernes',
-      desayuno: 'Platano Maduro en Caldo de Manzana',
+      desayuno: 'Platano maduro',
       desayuno_detalle: {
-        preparacion: 'Cocer platano maduro en caldo de manzana casero. Muy liquido y suave.',
-        beneficios: { nutricional: 'Potasio + pectina', digestivo: 'Prebiotico + hidratacion' }
+        preparacion: 'Pelar platano. Cortar. Comer.',
+        beneficios: { nutricional: 'Potasio', digestivo: 'Prebiotico' }
       },
-      almuerzo: 'Atun Fresco Deshilachado con Sopa de Cebada',
+      almuerzo: 'Pejerrey hervido + caldo + papa cocida',
       almuerzo_detalle: {
-        preparacion: 'Atun a la plancha desmenuzado fino. Base: sopa de cebada + caldo vegetal.',
-        beneficios: { nutricional: 'Omega 3 completo', digestivo: 'Fibra suave + liquidos abundantes' }
+        preparacion: 'Pejerrey 8 min. Papa en caldo. Mezclar.',
+        beneficios: { nutricional: 'Omega 3 + carbos', digestivo: 'Nutritivo' }
       },
-      cena: 'Crema de Coliflor y Pescado Blanco Suave',
+      cena: 'Merluza + sopa caldo',
       cena_detalle: {
-        preparacion: 'Coliflor licuada con tilapia desmechada fina. Todo en caldo casero.',
-        beneficios: { nutricional: 'Proteina + vitaminas', digestivo: 'Ultra suave para la noche' }
+        preparacion: 'Merluza 8 min en caldo. Servir caliente.',
+        beneficios: { nutricional: 'Proteina', digestivo: 'Suave' }
       },
-      ingredientes: ['Atun', 'Tilapia', 'Coliflor', 'Cebada'],
+      ingredientes: ['Pejerrey', 'Merluza', 'Papa', 'Platano'],
       nivel_fibra: 'Bajo',
-      tip_digestivo: 'Platano maduro: el mejor prebiotico natural.'
+      tip_digestivo: '⏱️ 10 min.'
     },
     6: {
       day: 'Sabado',
-      desayuno: 'Papaya licuada con Caldo casero',
+      desayuno: 'Mango en cubos',
       desayuno_detalle: {
-        preparacion: 'Papaya procesada + caldo vegetal. Beber como jugo fresco y digestivo.',
-        beneficios: { nutricional: 'Papaina + minerales', digestivo: 'Enzimas + hidratacion maxima' }
+        preparacion: 'Pelar mango. Cortar. Servir frío.',
+        beneficios: { nutricional: 'Vitamina C', digestivo: 'Enzimas' }
       },
-      almuerzo: 'Salmon Silvestre con Arroz en Caldo de Verduras',
+      almuerzo: 'Salmon + arroz + caldo',
       almuerzo_detalle: {
-        preparacion: 'Salmon cocido desmenuzado. Arroz tierno cocido en caldo de zanahoria y apio.',
-        beneficios: { nutricional: 'Omega 3 + almidones', digestivo: 'Todo muy humedo y suave' }
+        preparacion: 'Salmon 8 min. Arroz cocido. Caldo caliente.',
+        beneficios: { nutricional: 'Omega 3 + carbos', digestivo: 'Saciante' }
       },
-      cena: 'Consomé de Pescado Casero con Fideos Finos',
+      cena: 'Sopa noodles + merluza',
       cena_detalle: {
-        preparacion: 'Consomé transparent de pescado con fideos muy finos y cebollino picado.',
-        beneficios: { nutricional: 'Colageno puro', digestivo: 'Reconfortante extremo' }
+        preparacion: 'Merluza en caldo. Noodles 3 min. Listo.',
+        beneficios: { nutricional: 'Proteina', digestivo: 'Facil' }
       },
-      ingredientes: ['Salmon', 'Arroz', 'Consomé casero', 'Fideos'],
+      ingredientes: ['Salmon', 'Merluza', 'Arroz', 'Noodles'],
       nivel_fibra: 'Bajo',
-      tip_digestivo: 'Sabado: mas liquidos, menos solidos. Descansa el sistema.'
+      tip_digestivo: '⏱️ 12 min.'
     },
     0: {
       day: 'Domingo',
-      desayuno: 'Pera en Pure de Caldo de Pollo',
+      desayuno: 'Papaya en cubos',
       desayuno_detalle: {
-        preparacion: 'Pera cocida licuada en caldo de pollo casero. Muy liquido y enriquecido.',
-        beneficios: { nutricional: 'Sorbitol + amino acidos', digestivo: 'Laxante suave + reparador' }
+        preparacion: 'Cortar papaya. Servir fría.',
+        beneficios: { nutricional: 'Vitamina C', digestivo: 'Enzimas' }
       },
-      almuerzo: 'Sopa Completa de Pescado Blanco con Noodles',
+      almuerzo: 'Tilapia + caldo + noodles',
       almuerzo_detalle: {
-        preparacion: 'Consomé de pescado. Pescado cocido desmenuzado + noodles muy blandos.',
-        beneficios: { nutricional: 'Colageno marino', digestivo: 'Cierre de semana suave' }
+        preparacion: 'Tilapia 8 min. Noodles 3 min. Caldo caliente.',
+        beneficios: { nutricional: 'Proteina', digestivo: 'Reconfortante' }
       },
-      cena: 'Crema de Calabaza y Merluza',
+      cena: 'Sopa bacalao + fideos',
       cena_detalle: {
-        preparacion: 'Calabaza al horno licuada con merluza desmechada. Base: caldo casero.',
-        beneficios: { nutricional: 'Betacarotenos + Omega 3', digestivo: 'Muy digestivo y nutritivo' }
+        preparacion: 'Bacalao en caldo 8 min. Fideos 3 min. Listo.',
+        beneficios: { nutricional: 'Proteina marina', digestivo: 'Suave' }
       },
-      ingredientes: ['Merluza', 'Calabaza', 'Noodles', 'Caldo casero'],
+      ingredientes: ['Tilapia', 'Bacalao', 'Noodles', 'Fideos'],
       nivel_fibra: 'Bajo',
-      tip_digestivo: 'Cierre de semana: pescado todos los dias resulta en un sistema digestivo sano.'
+      tip_digestivo: '⏱️ 12 min fin de semana.'
     },
   },
   'Semana 2': {
-    1: { day: 'Lunes', desayuno: 'Papaya con Agua destilada', desayuno_detalle: { preparacion: 'Papaya fresca en cubos + 100ml agua tibia destilada. Muy hidratante.', beneficios: { nutricional: 'Papaina pura', digestivo: 'Enzimas + hidratacion' } }, almuerzo: 'Salmon Rosado con Sopa de Cebada', almuerzo_detalle: { preparacion: 'Salmon cocido desmenuzado. Sopa base: cebada + caldo vegetal + zanahoria fina.', beneficios: { nutricional: 'Omega 3 + fibra soluble', digestivo: 'Lubrica + regula' } }, cena: 'Caldo Cremoso de Tilapia y Coliflor', cena_detalle: { preparacion: 'Tilapia en caldo casero. Coliflor licuada. Textura suave y reconfortante.', beneficios: { nutricional: 'Proteina + vitaminas', digestivo: 'Ultra suave' } }, ingredientes: ['Salmon', 'Tilapia', 'Coliflor', 'Cebada'], nivel_fibra: 'Bajo', tip_digestivo: 'Semana 2: intensificamos pescado al 80% de las comidas.' },
+    1: { day: 'Lunes', desayuno: 'Papaya cruda', desayuno_detalle: { preparacion: 'Cortar papaya. Servir.', beneficios: { nutricional: 'Vitamina C', digestivo: 'Enzimas' } }, almuerzo: 'Salmon + arroz + caldo', almuerzo_detalle: { preparacion: 'Salmon 8 min. Arroz. Caldo caliente.', beneficios: { nutricional: 'Omega 3', digestivo: 'Facil' } }, cena: 'Sopa tilapia + fideos', cena_detalle: { preparacion: 'Tilapia en caldo 8 min. Fideos 3 min.', beneficios: { nutricional: 'Proteina', digestivo: 'Suave' } }, ingredientes: ['Salmon', 'Tilapia', 'Arroz', 'Fideos'], nivel_fibra: 'Bajo', tip_digestivo: '⏱️ 12 min.' },
+    2: { day: 'Martes', desayuno: 'Pera cocida', desayuno_detalle: { preparacion: 'Hervir pera 5 min. En su agua.', beneficios: { nutricional: 'Sorbitol', digestivo: 'Laxante' } }, almuerzo: 'Merluza + zanahoria + caldo', almuerzo_detalle: { preparacion: 'Merluza 8 min al vapor. Zanahoria cocida. Caldo.', beneficios: { nutricional: 'Proteina + vitamina A', digestivo: 'Hidratante' } }, cena: 'Noodles + bacalao en caldo', cena_detalle: { preparacion: 'Bacalao en caldo 8 min. Noodles 3 min.', beneficios: { nutricional: 'Proteina marina', digestivo: 'Facil' } }, ingredientes: ['Merluza', 'Bacalao', 'Zanahoria', 'Noodles'], nivel_fibra: 'Bajo', tip_digestivo: '⏱️ 12 min.' },
+    3: { day: 'Miercoles', desayuno: 'Kiwi crudo', desayuno_detalle: { preparacion: 'Cortar kiwi. Comer con cuchara.', beneficios: { nutricional: 'Vitamina C', digestivo: 'Enzimas digestivas' } }, almuerzo: 'Atun lata + caldo + papa', almuerzo_detalle: { preparacion: 'Atun + caldo caliente. Papa cocida.', beneficios: { nutricional: 'Omega 3', digestivo: 'Rapido' } }, cena: 'Branzino + sopa + fideos', cena_detalle: { preparacion: 'Branzino 8 min. Fideos 3 min en caldo.', beneficios: { nutricional: 'Proteina', digestivo: 'Suave' } }, ingredientes: ['Atun', 'Branzino', 'Papa', 'Fideos'], nivel_fibra: 'Bajo', tip_digestivo: '⏱️ 10 min.' },
+    4: { day: 'Jueves', desayuno: 'Ciruela pasa', desayuno_detalle: { preparacion: 'Remojar ciruelas 2 min. Comer y beber agua.', beneficios: { nutricional: 'Sorbitol', digestivo: 'Laxante natural' } }, almuerzo: 'Dorada + caldo + arroz', almuerzo_detalle: { preparacion: 'Dorada 8 min al vapor. Arroz en caldo.', beneficios: { nutricional: 'Omega 3 + carbos', digestivo: 'Nutritivo' } }, cena: 'Sopa tilapia + zanahoria', cena_detalle: { preparacion: 'Tilapia en caldo 8 min. Zanahoria cocida.', beneficios: { nutricional: 'Vitamina A', digestivo: 'Facil' } }, ingredientes: ['Dorada', 'Tilapia', 'Arroz', 'Zanahoria'], nivel_fibra: 'Bajo', tip_digestivo: '⏱️ 12 min.' },
+    5: { day: 'Viernes', desayuno: 'Platano maduro', desayuno_detalle: { preparacion: 'Pelar. Cortar. Comer.', beneficios: { nutricional: 'Potasio', digestivo: 'Prebiotico' } }, almuerzo: 'Pejerrey + papa + caldo', almuerzo_detalle: { preparacion: 'Pejerrey 8 min. Papa en caldo.', beneficios: { nutricional: 'Omega 3', digestivo: 'Facil' } }, cena: 'Merluza + sopa caldo', cena_detalle: { preparacion: 'Merluza 8 min en caldo caliente.', beneficios: { nutricional: 'Proteina', digestivo: 'Suave' } }, ingredientes: ['Pejerrey', 'Merluza', 'Papa', 'Platano'], nivel_fibra: 'Bajo', tip_digestivo: '⏱️ 10 min.' },
+    6: { day: 'Sabado', desayuno: 'Mango crudo', desayuno_detalle: { preparacion: 'Pelar mango. Cortar. Frío.', beneficios: { nutricional: 'Vitamina C', digestivo: 'Enzimas' } }, almuerzo: 'Salmon + noodles + caldo', almuerzo_detalle: { preparacion: 'Salmon 8 min. Noodles 3 min en caldo.', beneficios: { nutricional: 'Omega 3', digestivo: 'Reconfortante' } }, cena: 'Fideos + bacalao + caldo', cena_detalle: { preparacion: 'Bacalao 8 min. Fideos 3 min.', beneficios: { nutricional: 'Proteina marina', digestivo: 'Facil' } }, ingredientes: ['Salmon', 'Bacalao', 'Noodles', 'Fideos'], nivel_fibra: 'Bajo', tip_digestivo: '⏱️ 12 min.' },
+    0: { day: 'Domingo', desayuno: 'Papaya cruda', desayuno_detalle: { preparacion: 'Cortar papaya. Servir frío.', beneficios: { nutricional: 'Vitamina C', digestivo: 'Enzimas' } }, almuerzo: 'Tilapia + noodles + caldo', almuerzo_detalle: { preparacion: 'Tilapia 8 min. Noodles 3 min.', beneficios: { nutricional: 'Proteina', digestivo: 'Suave' } }, cena: 'Sopa bacalao + fideos', cena_detalle: { preparacion: 'Bacalao en caldo 8 min. Fideos 3 min.', beneficios: { nutricional: 'Proteina marina', digestivo: 'Facil' } }, ingredientes: ['Tilapia', 'Bacalao', 'Noodles', 'Fideos'], nivel_fibra: 'Bajo', tip_digestivo: '⏱️ 12 min weekend.' },
+  },
+  'Semana 3': {
+    1: { day: 'Lunes', desayuno: 'Papaya cruda', desayuno_detalle: { preparacion: 'Cortar papaya. Servir.', beneficios: { nutricional: 'Vitamina C', digestivo: 'Enzimas' } }, almuerzo: 'Salmon + arroz + caldo', almuerzo_detalle: { preparacion: 'Salmon 8 min. Arroz. Caldo.', beneficios: { nutricional: 'Omega 3', digestivo: 'Facil' } }, cena: 'Tilapia + sopa fideos', cena_detalle: { preparacion: 'Tilapia en caldo 8 min. Fideos 3 min.', beneficios: { nutricional: 'Proteina', digestivo: 'Suave' } }, ingredientes: ['Salmon', 'Tilapia', 'Arroz', 'Fideos'], nivel_fibra: 'Bajo', tip_digestivo: '⏱️ 12 min.' },
+    2: { day: 'Martes', desayuno: 'Ciruela pasa', desayuno_detalle: { preparacion: 'Remojar 2 min. Comer. Beber agua.', beneficios: { nutricional: 'Sorbitol', digestivo: 'Laxante' } }, almuerzo: 'Merluza + zanahoria + caldo', almuerzo_detalle: { preparacion: 'Merluza 8 min al vapor. Zanahoria. Caldo.', beneficios: { nutricional: 'Proteina + vitamina A', digestivo: 'Facil' } }, cena: 'Noodles + branzino en caldo', cena_detalle: { preparacion: 'Branzino en caldo 8 min. Noodles 3 min.', beneficios: { nutricional: 'Proteina', digestivo: 'Suave' } }, ingredientes: ['Merluza', 'Branzino', 'Zanahoria', 'Noodles'], nivel_fibra: 'Bajo', tip_digestivo: '⏱️ 12 min.' },
+    3: { day: 'Miercoles', desayuno: 'Pera cocida', desayuno_detalle: { preparacion: 'Hervir pera 5 min. En su agua.', beneficios: { nutricional: 'Sorbitol', digestivo: 'Laxante suave' } }, almuerzo: 'Atun lata + papa + caldo', almuerzo_detalle: { preparacion: 'Atun + caldo caliente. Papa cocida.', beneficios: { nutricional: 'Omega 3', digestivo: 'Rapido' } }, cena: 'Salmon + sopa fideos', cena_detalle: { preparacion: 'Salmon en caldo 8 min. Fideos 3 min.', beneficios: { nutricional: 'Proteina', digestivo: 'Suave' } }, ingredientes: ['Atun', 'Salmon', 'Papa', 'Fideos'], nivel_fibra: 'Bajo', tip_digestivo: '⏱️ 10 min.' },
+    4: { day: 'Jueves', desayuno: 'Kiwi crudo', desayuno_detalle: { preparacion: 'Cortar kiwi. Comer con cuchara.', beneficios: { nutricional: 'Vitamina C', digestivo: 'Actinidina' } }, almuerzo: 'Dorada + caldo + noodles', almuerzo_detalle: { preparacion: 'Dorada 8 min al vapor. Noodles en caldo.', beneficios: { nutricional: 'Omega 3', digestivo: 'Facil' } }, cena: 'Tilapia + zanahoria en sopa', cena_detalle: { preparacion: 'Tilapia en caldo 8 min. Zanahoria cocida.', beneficios: { nutricional: 'Vitamina A', digestivo: 'Suave' } }, ingredientes: ['Dorada', 'Tilapia', 'Zanahoria', 'Noodles'], nivel_fibra: 'Bajo', tip_digestivo: '⏱️ 12 min.' },
+    5: { day: 'Viernes', desayuno: 'Mango crudo', desayuno_detalle: { preparacion: 'Pelar mango. Cortar. Frío.', beneficios: { nutricional: 'Vitamina C', digestivo: 'Enzimas' } }, almuerzo: 'Pejerrey + papa + caldo', almuerzo_detalle: { preparacion: 'Pejerrey 8 min. Papa en caldo.', beneficios: { nutricional: 'Omega 3', digestivo: 'Nutritivo' } }, cena: 'Merluza + sopa fideos', cena_detalle: { preparacion: 'Merluza en caldo 8 min. Fideos 3 min.', beneficios: { nutricional: 'Proteina', digestivo: 'Facil' } }, ingredientes: ['Pejerrey', 'Merluza', 'Papa', 'Fideos'], nivel_fibra: 'Bajo', tip_digestivo: '⏱️ 10 min.' },
+    6: { day: 'Sabado', desayuno: 'Platano maduro', desayuno_detalle: { preparacion: 'Pelar. Cortar. Comer.', beneficios: { nutricional: 'Potasio', digestivo: 'Prebiotico' } }, almuerzo: 'Bacalao + arroz + caldo', almuerzo_detalle: { preparacion: 'Bacalao 8 min. Arroz en caldo.', beneficios: { nutricional: 'Proteina marina', digestivo: 'Saciante' } }, cena: 'Apio + tilapia en sopa', cena_detalle: { preparacion: 'Tilapia en caldo 8 min. Apio cocido.', beneficios: { nutricional: 'Sodio natural', digestivo: 'Suave' } }, ingredientes: ['Bacalao', 'Tilapia', 'Arroz', 'Apio'], nivel_fibra: 'Bajo', tip_digestivo: '⏱️ 12 min.' },
+    0: { day: 'Domingo', desayuno: 'Papaya cruda', desayuno_detalle: { preparacion: 'Cortar papaya. Frío.', beneficios: { nutricional: 'Vitamina C', digestivo: 'Enzimas' } }, almuerzo: 'Salmon + caldo + noodles', almuerzo_detalle: { preparacion: 'Salmon 8 min. Noodles en caldo 3 min.', beneficios: { nutricional: 'Omega 3', digestivo: 'Reconfortante' } }, cena: 'Pescado blanco + sopa fideos', cena_detalle: { preparacion: 'Pescado en caldo 8 min. Fideos 3 min.', beneficios: { nutricional: 'Proteina marina', digestivo: 'Ultra suave' } }, ingredientes: ['Salmon', 'Pescado blanco', 'Noodles', 'Fideos'], nivel_fibra: 'Bajo', tip_digestivo: '⏱️ 12 min finish semana.' },
+  },
+  'Semana 4': {
+    1: { day: 'Lunes', desayuno: 'Papaya cruda', desayuno_detalle: { preparacion: 'Cortar papaya. Servir frío.', beneficios: { nutricional: 'Vitamina C', digestivo: 'Enzimas' } }, almuerzo: 'Salmon + arroz + caldo', almuerzo_detalle: { preparacion: 'Salmon 8 min. Arroz. Caldo caliente.', beneficios: { nutricional: 'Omega 3', digestivo: 'Facil' } }, cena: 'Sopa branzino + fideos', cena_detalle: { preparacion: 'Branzino en caldo 8 min. Fideos 3 min.', beneficios: { nutricional: 'Proteina', digestivo: 'Suave' } }, ingredientes: ['Salmon', 'Branzino', 'Arroz', 'Fideos'], nivel_fibra: 'Bajo', tip_digestivo: '⏱️ 12 min final.' },
+    2: { day: 'Martes', desayuno: 'Ciruela pasa', desayuno_detalle: { preparacion: 'Remojar 2 min. Comer. Beber agua.', beneficios: { nutricional: 'Sorbitol', digestivo: 'Laxante' } }, almuerzo: 'Merluza + caldo + calabaza', almuerzo_detalle: { preparacion: 'Merluza 8 min. Calabaza cocida en caldo.', beneficios: { nutricional: 'Proteina + vitamina A', digestivo: 'Facil' } }, cena: 'Tilapia + sopa fideos', cena_detalle: { preparacion: 'Tilapia en caldo 8 min. Fideos 3 min.', beneficios: { nutricional: 'Proteina', digestivo: 'Suave' } }, ingredientes: ['Merluza', 'Tilapia', 'Calabaza', 'Fideos'], nivel_fibra: 'Bajo', tip_digestivo: '⏱️ 12 min.' },
+    3: { day: 'Miercoles', desayuno: 'Kiwi crudo', desayuno_detalle: { preparacion: 'Cortar kiwi. Comer con cuchara.', beneficios: { nutricional: 'Vitamina C', digestivo: 'Actinidina' } }, almuerzo: 'Atun lata + arroz + caldo', almuerzo_detalle: { preparacion: 'Atun + caldo. Arroz cocido.', beneficios: { nutricional: 'Omega 3', digestivo: 'Rapido' } }, cena: 'Salmon + sopa coliflor', cena_detalle: { preparacion: 'Salmon en caldo 8 min. Coliflor cocida.', beneficios: { nutricional: 'Proteina', digestivo: 'Ultra suave' } }, ingredientes: ['Atun', 'Salmon', 'Arroz', 'Coliflor'], nivel_fibra: 'Bajo', tip_digestivo: '⏱️ 10 min.' },
+    4: { day: 'Jueves', desayuno: 'Pera cocida', desayuno_detalle: { preparacion: 'Hervir pera 5 min. En su agua.', beneficios: { nutricional: 'Sorbitol', digestivo: 'Laxante' } }, almuerzo: 'Dorada + caldo + noodles', almuerzo_detalle: { preparacion: 'Dorada 8 min al vapor. Noodles 3 min.', beneficios: { nutricional: 'Omega 3', digestivo: 'Facil' } }, cena: 'Merluza + zanahoria en sopa', cena_detalle: { preparacion: 'Merluza en caldo 8 min. Zanahoria cocida.', beneficios: { nutricional: 'Vitamina A', digestivo: 'Suave' } }, ingredientes: ['Dorada', 'Merluza', 'Zanahoria', 'Noodles'], nivel_fibra: 'Bajo', tip_digestivo: '⏱️ 12 min.' },
+    5: { day: 'Viernes', desayuno: 'Platano maduro', desayuno_detalle: { preparacion: 'Pelar. Cortar. Comer.', beneficios: { nutricional: 'Potasio', digestivo: 'Prebiotico' } }, almuerzo: 'Pejerrey + caldo + papa', almuerzo_detalle: { preparacion: 'Pejerrey 8 min. Papa en caldo.', beneficios: { nutricional: 'Omega 3', digestivo: 'Nutritivo' } }, cena: 'Pescado blanco + sopa fideos', cena_detalle: { preparacion: 'Pescado en caldo 8 min. Fideos 3 min.', beneficios: { nutricional: 'Proteina marina', digestivo: 'Facil' } }, ingredientes: ['Pejerrey', 'Pescado blanco', 'Papa', 'Fideos'], nivel_fibra: 'Bajo', tip_digestivo: '⏱️ 10 min.' },
+    6: { day: 'Sabado', desayuno: 'Mango crudo', desayuno_detalle: { preparacion: 'Pelar mango. Cortar. Frío.', beneficios: { nutricional: 'Vitamina C', digestivo: 'Enzimas' } }, almuerzo: 'Bacalao + arroz + caldo', almuerzo_detalle: { preparacion: 'Bacalao 8 min. Arroz en caldo.', beneficios: { nutricional: 'Proteina marina', digestivo: 'Saciante' } }, cena: 'Tilapia + sopa apio', cena_detalle: { preparacion: 'Tilapia en caldo 8 min. Apio cocido.', beneficios: { nutricional: 'Sodio natural', digestivo: 'Suave' } }, ingredientes: ['Bacalao', 'Tilapia', 'Arroz', 'Apio'], nivel_fibra: 'Bajo', tip_digestivo: '⏱️ 12 min.' },
+    0: { day: 'Domingo', desayuno: 'Papaya cruda', desayuno_detalle: { preparacion: 'Cortar papaya. Frío.', beneficios: { nutricional: 'Vitamina C', digestivo: 'Enzimas' } }, almuerzo: 'Salmon + caldo + noodles', almuerzo_detalle: { preparacion: 'Salmon 8 min. Noodles en caldo 3 min.', beneficios: { nutricional: 'Omega 3', digestivo: 'Reconfortante' } }, cena: 'Merluza + sopa fideos', cena_detalle: { preparacion: 'Merluza en caldo 8 min. Fideos 3 min.', beneficios: { nutricional: 'Proteina marina', digestivo: 'Ultra suave' } }, ingredientes: ['Salmon', 'Merluza', 'Noodles', 'Fideos'], nivel_fibra: 'Bajo', tip_digestivo: '⏱️ 12 min FINAL.' },
+  }
+};
     2: { day: 'Martes', desayuno: 'Manzana Cocida en Caldo de Jengibre', desayuno_detalle: { preparacion: 'Manzana sin cascara cocida en caldo con jengibre fresco rallado suave.', beneficios: { nutricional: 'Pectina + antiinflamatorio', digestivo: 'Regula intestinos suavemente' } }, almuerzo: 'Branzino al Vapor con Pure de Batata Liquido', almuerzo_detalle: { preparacion: 'Branzino 12 min al vapor. Batata en caldo casero, muy cremosa.', beneficios: { nutricional: 'Omega 3 + betacarotenos', digestivo: 'Anti-constipación' } }, cena: 'Sopa de Merluza con Fideos y Zanahoria', cena_detalle: { preparacion: 'Merluza desmechada en caldo casero con fideos muy finos y zanahoria.', beneficios: { nutricional: 'Colageno + minerales', digestivo: 'Hidratacion completa' } }, ingredientes: ['Branzino', 'Merluza', 'Batata', 'Fideos'], nivel_fibra: 'Bajo', tip_digestivo: 'Jengibre cada 2 dias: anti-inflamatorio suave.' },
     3: { day: 'Miercoles', desayuno: 'Kiwi Licuado en Agua de Coco Natural', desayuno_detalle: { preparacion: 'Kiwi procesado + agua de coco natural (no leche). Jugo digestivo premium.', beneficios: { nutricional: 'Actinidina + electrolitos', digestivo: 'Laxante enzimático + hidratacion' } }, almuerzo: 'Salmon con Sopa de Arroz Integral y Caldo', almuerzo_detalle: { preparacion: 'Salmon deshilachado en sopa de arroz integral cocido lentamente en caldo.', beneficios: { nutricional: 'Omega 3 + fibra integral', digestivo: 'Prebiotico completo' } }, cena: 'Crema de Calabaza y Atun Fresco', cena_detalle: { preparacion: 'Calabaza licuada + atun desmechado fino. Todo en caldo casero denso.', beneficios: { nutricional: 'Betacarotenos + Omega 3', digestivo: 'Suave y nutritivo' } }, ingredientes: ['Salmon', 'Atun', 'Calabaza', 'Arroz integral'], nivel_fibra: 'Bajo', tip_digestivo: 'Agua de coco: mejor que cualquier bebida procesada.' },
     4: { day: 'Jueves', desayuno: 'Ciruela Pasa en Caldo Tibia', desayuno_detalle: { preparacion: 'Ciruelas remojadas en caldo vegetal tibia. Procesar todo incluido el liquido.', beneficios: { nutricional: 'Sorbitol puro', digestivo: 'Efecto laxante comprobado' } }, almuerzo: 'Dorada al Papillot con Sopa de Verduras', almuerzo_detalle: { preparacion: 'Dorada en papel 12 min. Servir en consomé casero claro y aromaático.', beneficios: { nutricional: 'Omega 3 + minerales marinos', digestivo: 'Digestion facil' } }, cena: 'Pure de Zanahoria y Tilapia', cena_detalle: { preparacion: 'Zanahoria licuada + tilapia desmechada. Base: caldo casero abundante.', beneficios: { nutricional: 'Vitamina A + proteina', digestivo: 'Reparador nocturno' } }, ingredientes: ['Dorada', 'Tilapia', 'Zanahoria', 'Caldo casero'], nivel_fibra: 'Bajo', tip_digestivo: 'Ciruela al desayuno = barriga feliz garantizado.' },
