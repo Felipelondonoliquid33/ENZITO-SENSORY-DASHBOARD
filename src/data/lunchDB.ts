@@ -29,175 +29,175 @@ export const LUNCH_RECIPES_DB: Record<string, WeekMenu> = {
       day: 'Lunes',
       desayuno: 'Papaya madura con Chia hidratada',
       desayuno_detalle: {
-        preparacion: 'Hidratar 1 cdta de chia en 3 de agua por 15 min. Mezclar con papaya en cubos.',
-        beneficios: { nutricional: 'Vitamina A/C', digestivo: 'Papaina enzimatica' }
+        preparacion: 'Hidratar 1 cdta de chia en 4 cdas de agua por 15 min. Mezclar con papaya en cubos.',
+        beneficios: { nutricional: 'Vitamina A/C + Omega 3', digestivo: 'Papaina + hidratacion' }
       },
-      almuerzo: 'Carne de Cadera a la Plancha con Pure de Auyama',
+      almuerzo: 'Salmon al Vapor con Caldo de Vegetales',
       almuerzo_detalle: {
-        preparacion: 'Sellar cadera de res picada finamente. Acompañar con auyama licuada con aceite de oliva.',
-        beneficios: { nutricional: 'Proteina + Hierro/Zinc', digestivo: 'Fibra soluble de auyama' }
+        preparacion: 'Salmon fresco cortado fino al vapor 10 min. Servir en caldo casero de zanahoria y apio.',
+        beneficios: { nutricional: 'Omega 3 + DHA cerebral', digestivo: 'Lubrica intestinos + hidratacion' }
       },
-      cena: 'Crema suave de Calabacin con Pollo desmechado',
+      cena: 'Sopa Cremosa de Coliflor con Pescado Blanco',
       cena_detalle: {
-        preparacion: 'Hervir calabacin sin piel. Licuar con sal, oliva y pollo desmechado.',
-        beneficios: { nutricional: 'Magnesio + Proteina', digestivo: '95% agua, ultra digestivo' }
+        preparacion: 'Coliflor hervida licuada con tilapia desmenuzada y caldo. Textura sedosa.',
+        beneficios: { nutricional: 'Proteina + Vitamina C', digestivo: '98% liquido, ultra suave' }
       },
-      ingredientes: ['Res (Cadera)', 'Auyama', 'Pollo', 'Aceite de oliva'],
-      nivel_fibra: 'Alto',
-      tip_digestivo: 'La carne de cadera es magra y rica en hierro.'
+      ingredientes: ['Salmon', 'Tilapia', 'Coliflor', 'Caldo casero'],
+      nivel_fibra: 'Bajo',
+      tip_digestivo: 'Pescado diario + liquidos = barriga feliz.'
     },
     2: {
       day: 'Martes',
-      desayuno: 'Avena con Huevo Cocido y Pera',
+      desayuno: 'Pera madura rallada en Caldo de Verduras',
       desayuno_detalle: {
-        preparacion: 'Cocinar avena en agua. Acompañar con 1 huevo cocido picado y pera rallada.',
-        beneficios: { nutricional: 'Super Proteina + Fibra', digestivo: 'Barre el colon' }
+        preparacion: 'Calentar caldo casero. Agregar pera rallada fina sin cascara. Muy liquido.',
+        beneficios: { nutricional: 'Sorbitol laxante + minerales', digestivo: 'Activa intestinos suavemente' }
       },
-      almuerzo: 'Filete de Pescado Blanco al Vapor con Brocoli',
+      almuerzo: 'Tilapia al Papillot con Pure de Calabaza y Caldo',
       almuerzo_detalle: {
-        preparacion: 'Cocer pescado blanco y brocoli al vapor con limon. Triturar con aguacate.',
-        beneficios: { nutricional: 'Omega 3 de alta calidad', digestivo: 'Lubricacion natural' }
+        preparacion: 'Tilapia en papel aluminio 12 min. Servir con calabaza licuada en caldo de pollo.',
+        beneficios: { nutricional: 'Omega 3 completo + betacarotenos', digestivo: 'Lubricante triple' }
       },
-      cena: 'Compota de Manzana con Caldo de Pollo',
+      cena: 'Sopa de Pescado Desmenuzado con Fideos Finos',
       cena_detalle: {
-        preparacion: 'Hervir manzana sin cascara. Triturar con caldo de pollo natural.',
-        beneficios: { nutricional: 'Pectina + Aminoacidos', digestivo: 'Regulador intestinal' }
+        preparacion: 'Caldo de pescado casero con merluza cocida y desmenuzada + fideos muy finos.',
+        beneficios: { nutricional: 'Colageno marino + proteina', digestivo: 'Hidratacion maxima' }
       },
-      ingredientes: ['Pescado Blanco', 'Huevo', 'Brocoli', 'Aguacate'],
-      nivel_fibra: 'Alto',
-      tip_digestivo: 'El pescado es la proteina mas facil de digerir.'
+      ingredientes: ['Tilapia', 'Merluza', 'Calabaza', 'Caldo casero'],
+      nivel_fibra: 'Bajo',
+      tip_digestivo: 'Caldo casero cada comida = sistema digestivo feliz.'
     },
     3: {
       day: 'Miercoles',
-      desayuno: 'Granadilla con Yogurt Griego',
+      desayuno: 'Kiwi licuado en Caldo ligero',
       desayuno_detalle: {
-        preparacion: 'Mezclar granadilla pura con yogurt griego natural.',
-        beneficios: { nutricional: 'Calcio + Probioticos', digestivo: 'Movimiento mecanico intestinal' }
+        preparacion: 'Procesar kiwi sin cascara + 100ml caldo vegetal casero. Beber como jugo digestivo.',
+        beneficios: { nutricional: 'Actinidina + enzimas', digestivo: 'Laxante enzimático potente' }
       },
-      almuerzo: 'Estofado de Carne de Cadera con Zanahoria',
+      almuerzo: 'Salmon Desmenuzado en Sopa de Coco con Zanahoria',
       almuerzo_detalle: {
-        preparacion: 'Guisar carne de cadera muy tierna con zanahoria y un toque de coco.',
-        beneficios: { nutricional: 'B12 + Carotenos', digestivo: 'Textura ligera, facil paso' }
+        preparacion: 'Salmon cocido desmenuzado fino. Base: caldo + leche de coco + zanahoria licuada.',
+        beneficios: { nutricional: 'Omega 3 + TCM + carotenos', digestivo: 'Antiinflamatorio + hidratacion' }
       },
-      cena: 'Pure de Batata con Queso Fresco',
+      cena: 'Crema de Zanahoria y Merluza',
       cena_detalle: {
-        preparacion: 'Cocer batata. Aplastar con tenedor, aceite de coco y queso fresco.',
-        beneficios: { nutricional: 'Betacarotenos + Caseina', digestivo: 'Suave al tacto' }
+        preparacion: 'Zanahoria al vapor licuada + merluza desmechada + caldo. Textura untuosa.',
+        beneficios: { nutricional: 'Vitamina A + proteina marina', digestivo: 'Suave y nutritivo' }
       },
-      ingredientes: ['Res (Cadera)', 'Yogurt Griego', 'Batata', 'Queso fresco'],
-      nivel_fibra: 'Medio',
-      tip_digestivo: 'El yogurt griego tiene el doble de proteina que el normal.'
+      ingredientes: ['Salmon', 'Merluza', 'Zanahoria', 'Leche de coco'],
+      nivel_fibra: 'Bajo',
+      tip_digestivo: 'Kiwi por las mañanas: activa enzimas digestivas para todo el dia.'
     },
     4: {
       day: 'Jueves',
-      desayuno: 'Pitahaya con Jamon de Pavo',
+      desayuno: 'Ciruela pasa Hidratada en Agua tibia',
       desayuno_detalle: {
-        preparacion: 'Servir pitahaya picada con tiras finas de jamon de pavo artesanal.',
-        beneficios: { nutricional: 'Proteina magra + vitaminas', digestivo: 'Laxante natural potente' }
+        preparacion: 'Remojar 2 ciruelas pasas en agua tibia 20 min. Procesar todo (agua incluida).',
+        beneficios: { nutricional: 'Sorbitol + fibra suave', digestivo: 'Laxante natural comprobado' }
       },
-      almuerzo: 'Arroz con Pollo y Garbanzos Licuados',
+      almuerzo: 'Branzino al Vapor con Sopa de Cebada y Zanahoria',
       almuerzo_detalle: {
-        preparacion: 'Arroz con pollo desmechado y crema de garbanzos remojados 24h.',
-        beneficios: { nutricional: 'Doble Proteina completa', digestivo: 'Estimula peristaltismo' }
+        preparacion: 'Branzino 12 min al vapor. Servir en caldo con cebada cocida y zanahoria fina.',
+        beneficios: { nutricional: 'Omega 3 + minerales', digestivo: 'Fibra soluble + hidratacion' }
       },
-      cena: 'Sopita de pasta con Pollo procesado',
+      cena: 'Caldo de Pescado con Fideos y Perejil',
       cena_detalle: {
-        preparacion: 'Pasta en caldo de pollo con hebras muy finas de pollo y oliva.',
-        beneficios: { nutricional: 'Confort + Proteina', digestivo: 'Facil paso intestinal' }
+        preparacion: 'Caldo casero de espinas de pescado. Fideos muy finos. Perejil fresco picado.',
+        beneficios: { nutricional: 'Colageno marino puro', digestivo: 'Sana mucosa intestinal' }
       },
-      ingredientes: ['Pollo', 'Garbanzo', 'Pavo', 'Oliva'],
-      nivel_fibra: 'Alto',
-      tip_digestivo: 'Los garbanzos deben estar muy bien procesados.'
+      ingredientes: ['Branzino', 'Cebada', 'Zanahoria', 'Caldo casero'],
+      nivel_fibra: 'Bajo',
+      tip_digestivo: 'Ciruela al desayuno = mejor que cualquier medicamento natural.'
     },
     5: {
       day: 'Viernes',
-      desayuno: 'Tortilla de Huevo con Kiwi',
+      desayuno: 'Platano Maduro en Caldo de Manzana',
       desayuno_detalle: {
-        preparacion: 'Hacer tortilla con clara y una yema. Acompañar con kiwi fresco.',
-        beneficios: { nutricional: 'Albumina + Vitamina C', digestivo: 'Actinidina del kiwi' }
+        preparacion: 'Cocer platano maduro en caldo de manzana casero. Muy liquido y suave.',
+        beneficios: { nutricional: 'Potasio + pectina', digestivo: 'Prebiotico + hidratacion' }
       },
-      almuerzo: 'Quinoa Real con Salmon Desmenuzado',
+      almuerzo: 'Atun Fresco Deshilachado con Sopa de Cebada',
       almuerzo_detalle: {
-        preparacion: 'Salmon a la plancha picadito sobre quinoa con pure de calabaza.',
-        beneficios: { nutricional: 'Omega 3 + Aminoacidos completos', digestivo: 'Fibra prebiotica' }
+        preparacion: 'Atun a la plancha desmenuzado fino. Base: sopa de cebada + caldo vegetal.',
+        beneficios: { nutricional: 'Omega 3 completo', digestivo: 'Fibra suave + liquidos abundantes' }
       },
-      cena: 'Pure de Zanahoria con Res Molida',
+      cena: 'Crema de Coliflor y Pescado Blanco Suave',
       cena_detalle: {
-        preparacion: 'Cocer zanahoria con carne molida magra. Procesar hasta consistencia suave.',
-        beneficios: { nutricional: 'Hierro + Vitamina A', digestivo: 'Antiinflamatorio natural' }
+        preparacion: 'Coliflor licuada con tilapia desmechada fina. Todo en caldo casero.',
+        beneficios: { nutricional: 'Proteina + vitaminas', digestivo: 'Ultra suave para la noche' }
       },
-      ingredientes: ['Salmon', 'Quinoa', 'Res (Magra)', 'Huevo'],
-      nivel_fibra: 'Medio',
-      tip_digestivo: 'La quinoa es una proteina vegetal completa.'
+      ingredientes: ['Atun', 'Tilapia', 'Coliflor', 'Cebada'],
+      nivel_fibra: 'Bajo',
+      tip_digestivo: 'Platano maduro: el mejor prebiotico natural.'
     },
     6: {
       day: 'Sabado',
-      desayuno: 'Panqueque de Avena y Pollo',
+      desayuno: 'Papaya licuada con Caldo casero',
       desayuno_detalle: {
-        preparacion: 'Mezclar avena, pure de papa y pollo desmechado. Asar con oliva.',
-        beneficios: { nutricional: 'Carbo Complejos + Proteina', digestivo: 'Mucilago protector' }
+        preparacion: 'Papaya procesada + caldo vegetal. Beber como jugo fresco y digestivo.',
+        beneficios: { nutricional: 'Papaina + minerales', digestivo: 'Enzimas + hidratacion maxima' }
       },
-      almuerzo: 'Cadera Salteada con Habichuelas',
+      almuerzo: 'Salmon Silvestre con Arroz en Caldo de Verduras',
       almuerzo_detalle: {
-        preparacion: 'Carne de cadera en trozos muy pequeños con habichuelas al vapor.',
-        beneficios: { nutricional: 'Fuerza + Hierro', digestivo: 'Fibra larga habichuelas' }
+        preparacion: 'Salmon cocido desmenuzado. Arroz tierno cocido en caldo de zanahoria y apio.',
+        beneficios: { nutricional: 'Omega 3 + almidones', digestivo: 'Todo muy humedo y suave' }
       },
-      cena: 'Caldo de Vegetales con Huevo Poche',
+      cena: 'Consomé de Pescado Casero con Fideos Finos',
       cena_detalle: {
-        preparacion: 'Hervir apio y zanahoria. Colar. Agregar 1 huevo poche al caldo caliente.',
-        beneficios: { nutricional: 'Proteina pura', digestivo: 'Descanso total digestivo' }
+        preparacion: 'Consomé transparent de pescado con fideos muy finos y cebollino picado.',
+        beneficios: { nutricional: 'Colageno puro', digestivo: 'Reconfortante extremo' }
       },
-      ingredientes: ['Res (Cadera)', 'Huevo', 'Habichuelas', 'Avena'],
-      nivel_fibra: 'Medio',
-      tip_digestivo: 'El huevo poche es muy facil de absorber.'
+      ingredientes: ['Salmon', 'Arroz', 'Consomé casero', 'Fideos'],
+      nivel_fibra: 'Bajo',
+      tip_digestivo: 'Sabado: mas liquidos, menos solidos. Descansa el sistema.'
     },
     0: {
       day: 'Domingo',
-      desayuno: 'Ciruelas pasas con Yogurt de Coco',
+      desayuno: 'Pera en Pure de Caldo de Pollo',
       desayuno_detalle: {
-        preparacion: 'Ciruelas hidratadas mezcladas con yogurt de coco y semillas de chia.',
-        beneficios: { nutricional: 'Grasas saludables', digestivo: 'Efecto Sorbitol laxante' }
+        preparacion: 'Pera cocida licuada en caldo de pollo casero. Muy liquido y enriquecido.',
+        beneficios: { nutricional: 'Sorbitol + amino acidos', digestivo: 'Laxante suave + reparador' }
       },
-      almuerzo: 'Sopa de Pescado con Vegetales Amarillos',
+      almuerzo: 'Sopa Completa de Pescado Blanco con Noodles',
       almuerzo_detalle: {
-        preparacion: 'Pescado blanco cocido en caldo de auyama, zanahoria y papa criolla.',
-        beneficios: { nutricional: 'Fosforo + Carotenos', digestivo: 'Absorcion rapida' }
+        preparacion: 'Consomé de pescado. Pescado cocido desmenuzado + noodles muy blandos.',
+        beneficios: { nutricional: 'Colageno marino', digestivo: 'Cierre de semana suave' }
       },
-      cena: 'Pure de Auyama con Queso y Pollo',
+      cena: 'Crema de Calabaza y Merluza',
       cena_detalle: {
-        preparacion: 'Auyama horneada y aplastada con queso fresco y pollo licuado.',
-        beneficios: { nutricional: 'Zinc + Proteina', digestivo: 'Cero irritacion' }
+        preparacion: 'Calabaza al horno licuada con merluza desmechada. Base: caldo casero.',
+        beneficios: { nutricional: 'Betacarotenos + Omega 3', digestivo: 'Muy digestivo y nutritivo' }
       },
-      ingredientes: ['Pescado Blanco', 'Auyama', 'Pollo', 'Queso fresco'],
-      nivel_fibra: 'Medio',
-      tip_digestivo: 'Cierre de semana suave pero nutritivo.'
+      ingredientes: ['Merluza', 'Calabaza', 'Noodles', 'Caldo casero'],
+      nivel_fibra: 'Bajo',
+      tip_digestivo: 'Cierre de semana: pescado todos los dias resulta en un sistema digestivo sano.'
     },
   },
   'Semana 2': {
-    1: { day: 'Lunes', desayuno: 'Tortilla de Huevo', desayuno_detalle: { preparacion: 'Huevo batido suave en sarten sin aceite.', beneficios: { nutricional: 'Proteina completa', digestivo: 'Muy facil de digerir' } }, almuerzo: 'Pescado Blanco al Vapor', almuerzo_detalle: { preparacion: 'Pescado tilapia al vapor 12 min con limon.', beneficios: { nutricional: 'Omega 3 + Fosforo', digestivo: 'Ligero y suave' } }, cena: 'Compota de Manzana', cena_detalle: { preparacion: 'Manzana sin cascara hervida y procesada.', beneficios: { nutricional: 'Fibra soluble pectina', digestivo: 'Suave y reconfortante' } }, ingredientes: ['Tilapia', 'Huevo', 'Manzana'], nivel_fibra: 'Medio', tip_digestivo: 'Semana 2: digestiva y suave.' },
-    2: { day: 'Martes', desayuno: 'Avena con Banano', desayuno_detalle: { preparacion: 'Avena cocida con banano maduro aplastado.', beneficios: { nutricional: 'Fibra + Potasio', digestivo: 'Prebiotico natural' } }, almuerzo: 'Pollo Desmechado con Pure de Papa', almuerzo_detalle: { preparacion: 'Pollo hervido desmechado con papa aplastada y oliva.', beneficios: { nutricional: 'Proteina completa', digestivo: 'Muy digestivo' } }, cena: 'Sopa de Zanahoria', cena_detalle: { preparacion: 'Zanahoria hervida licuada con caldo de pollo.', beneficios: { nutricional: 'Betacaroteno + Vitamina A', digestivo: 'Antiinflamatorio' } }, ingredientes: ['Pollo', 'Papa', 'Zanahoria', 'Banano'], nivel_fibra: 'Medio', tip_digestivo: 'Papa y pollo: combo digestivo clasico.' },
-    3: { day: 'Miercoles', desayuno: 'Pera madura rallada con Yogurt', desayuno_detalle: { preparacion: 'Pera sin cascara rallada sobre yogurt natural.', beneficios: { nutricional: 'Probioticos + Sorbitol', digestivo: 'Movimiento intestinal' } }, almuerzo: 'Salmon con Batata', almuerzo_detalle: { preparacion: 'Salmon a la plancha desmenuzado con batata al vapor.', beneficios: { nutricional: 'Omega 3 + Betacarotenos', digestivo: 'Lubrica intestinos' } }, cena: 'Caldo de Verduras con Fideos', cena_detalle: { preparacion: 'Caldo de apio y zanahoria con fideos finos.', beneficios: { nutricional: 'Minerales esenciales', digestivo: 'Suave y reconfortante' } }, ingredientes: ['Salmon', 'Batata', 'Yogurt', 'Fideos'], nivel_fibra: 'Medio', tip_digestivo: 'El salmon dos veces por semana es ideal.' },
-    4: { day: 'Jueves', desayuno: 'Huevo Poche con Aguacate', desayuno_detalle: { preparacion: 'Huevo poche sobre aguacate pisado con limon.', beneficios: { nutricional: 'Proteina + Grasas buenas', digestivo: 'Lubricante natural' } }, almuerzo: 'Res Molida con Arroz Suave', almuerzo_detalle: { preparacion: 'Carne molida magra con arroz bien cocido y zanahoria.', beneficios: { nutricional: 'Hierro + Zinc', digestivo: 'Facil paso' } }, cena: 'Pure de Arracacha', cena_detalle: { preparacion: 'Arracacha hervida y aplastada con caldo de pollo.', beneficios: { nutricional: 'Carbohidratos complejos', digestivo: 'Sin irritacion' } }, ingredientes: ['Res (Molida)', 'Aguacate', 'Arroz', 'Arracacha'], nivel_fibra: 'Bajo', tip_digestivo: 'La arracacha es muy suave para el sistema digestivo.' },
-    5: { day: 'Viernes', desayuno: 'Papaya con Semillas de Girasol', desayuno_detalle: { preparacion: 'Papaya en cubos con semillas de girasol tostadas.', beneficios: { nutricional: 'Vitamina E + Papaina', digestivo: 'Enzimas digestivas' } }, almuerzo: 'Cadera de Res con Habichuelas', almuerzo_detalle: { preparacion: 'Res cadera muy tierna con habichuelas al vapor.', beneficios: { nutricional: 'Proteina completa + Hierro', digestivo: 'Fibra suave habichuelas' } }, cena: 'Yogurt con Compota de Ciruela', cena_detalle: { preparacion: 'Yogurt griego con ciruelas cocidas y canela.', beneficios: { nutricional: 'Probioticos + Calcio', digestivo: 'Sorbitol laxante suave' } }, ingredientes: ['Res (Cadera)', 'Habichuelas', 'Yogurt Griego', 'Ciruela'], nivel_fibra: 'Alto', tip_digestivo: 'Ciruelas 2x por semana para regularidad.' },
-    6: { day: 'Sabado', desayuno: 'Tostada con Huevo Revuelto', desayuno_detalle: { preparacion: 'Pan integral tostado con huevo revuelto suave.', beneficios: { nutricional: 'Proteina + Fibra integral', digestivo: 'Inicio de dia energizante' } }, almuerzo: 'Quinoa con Pollo y Vegetales', almuerzo_detalle: { preparacion: 'Quinoa cocida con pollo desmechado y zanahoria suave.', beneficios: { nutricional: 'Proteina vegetal completa', digestivo: 'Prebiotico natural' } }, cena: 'Sopa Crema de Auyama', cena_detalle: { preparacion: 'Auyama licuada con caldo de pollo y un toque de nuez.', beneficios: { nutricional: 'Betacarotenos + Vitamina C', digestivo: 'Antiinflamatorio suave' } }, ingredientes: ['Pollo', 'Quinoa', 'Auyama', 'Huevo'], nivel_fibra: 'Medio', tip_digestivo: 'Quinoa + pollo: proteina que construye musculo.' },
-    0: { day: 'Domingo', desayuno: 'Frutas Variadas con Chia', desayuno_detalle: { preparacion: 'Mango, papaya y pera con chia hidratada.', beneficios: { nutricional: 'Multinutrientes', digestivo: 'Enzimas y fibra' } }, almuerzo: 'Pescado con Pure de Yuca', almuerzo_detalle: { preparacion: 'Pescado blanco cocido con yuca suave aplastada.', beneficios: { nutricional: 'Proteina + Almidones', digestivo: 'Muy tolerado' } }, cena: 'Leche de Coco con Fideos', cena_detalle: { preparacion: 'Sopa de fideos con leche de coco y un toque de apio.', beneficios: { nutricional: 'Trigliceridos medianos', digestivo: 'Antiinflamatorio intestinal' } }, ingredientes: ['Pescado Blanco', 'Yuca', 'Leche de coco', 'Chia'], nivel_fibra: 'Bajo', tip_digestivo: 'Domingo: recuperacion y suavidad total.' },
+    1: { day: 'Lunes', desayuno: 'Papaya con Agua destilada', desayuno_detalle: { preparacion: 'Papaya fresca en cubos + 100ml agua tibia destilada. Muy hidratante.', beneficios: { nutricional: 'Papaina pura', digestivo: 'Enzimas + hidratacion' } }, almuerzo: 'Salmon Rosado con Sopa de Cebada', almuerzo_detalle: { preparacion: 'Salmon cocido desmenuzado. Sopa base: cebada + caldo vegetal + zanahoria fina.', beneficios: { nutricional: 'Omega 3 + fibra soluble', digestivo: 'Lubrica + regula' } }, cena: 'Caldo Cremoso de Tilapia y Coliflor', cena_detalle: { preparacion: 'Tilapia en caldo casero. Coliflor licuada. Textura suave y reconfortante.', beneficios: { nutricional: 'Proteina + vitaminas', digestivo: 'Ultra suave' } }, ingredientes: ['Salmon', 'Tilapia', 'Coliflor', 'Cebada'], nivel_fibra: 'Bajo', tip_digestivo: 'Semana 2: intensificamos pescado al 80% de las comidas.' },
+    2: { day: 'Martes', desayuno: 'Manzana Cocida en Caldo de Jengibre', desayuno_detalle: { preparacion: 'Manzana sin cascara cocida en caldo con jengibre fresco rallado suave.', beneficios: { nutricional: 'Pectina + antiinflamatorio', digestivo: 'Regula intestinos suavemente' } }, almuerzo: 'Branzino al Vapor con Pure de Batata Liquido', almuerzo_detalle: { preparacion: 'Branzino 12 min al vapor. Batata en caldo casero, muy cremosa.', beneficios: { nutricional: 'Omega 3 + betacarotenos', digestivo: 'Anti-constipación' } }, cena: 'Sopa de Merluza con Fideos y Zanahoria', cena_detalle: { preparacion: 'Merluza desmechada en caldo casero con fideos muy finos y zanahoria.', beneficios: { nutricional: 'Colageno + minerales', digestivo: 'Hidratacion completa' } }, ingredientes: ['Branzino', 'Merluza', 'Batata', 'Fideos'], nivel_fibra: 'Bajo', tip_digestivo: 'Jengibre cada 2 dias: anti-inflamatorio suave.' },
+    3: { day: 'Miercoles', desayuno: 'Kiwi Licuado en Agua de Coco Natural', desayuno_detalle: { preparacion: 'Kiwi procesado + agua de coco natural (no leche). Jugo digestivo premium.', beneficios: { nutricional: 'Actinidina + electrolitos', digestivo: 'Laxante enzimático + hidratacion' } }, almuerzo: 'Salmon con Sopa de Arroz Integral y Caldo', almuerzo_detalle: { preparacion: 'Salmon deshilachado en sopa de arroz integral cocido lentamente en caldo.', beneficios: { nutricional: 'Omega 3 + fibra integral', digestivo: 'Prebiotico completo' } }, cena: 'Crema de Calabaza y Atun Fresco', cena_detalle: { preparacion: 'Calabaza licuada + atun desmechado fino. Todo en caldo casero denso.', beneficios: { nutricional: 'Betacarotenos + Omega 3', digestivo: 'Suave y nutritivo' } }, ingredientes: ['Salmon', 'Atun', 'Calabaza', 'Arroz integral'], nivel_fibra: 'Bajo', tip_digestivo: 'Agua de coco: mejor que cualquier bebida procesada.' },
+    4: { day: 'Jueves', desayuno: 'Ciruela Pasa en Caldo Tibia', desayuno_detalle: { preparacion: 'Ciruelas remojadas en caldo vegetal tibia. Procesar todo incluido el liquido.', beneficios: { nutricional: 'Sorbitol puro', digestivo: 'Efecto laxante comprobado' } }, almuerzo: 'Dorada al Papillot con Sopa de Verduras', almuerzo_detalle: { preparacion: 'Dorada en papel 12 min. Servir en consomé casero claro y aromaático.', beneficios: { nutricional: 'Omega 3 + minerales marinos', digestivo: 'Digestion facil' } }, cena: 'Pure de Zanahoria y Tilapia', cena_detalle: { preparacion: 'Zanahoria licuada + tilapia desmechada. Base: caldo casero abundante.', beneficios: { nutricional: 'Vitamina A + proteina', digestivo: 'Reparador nocturno' } }, ingredientes: ['Dorada', 'Tilapia', 'Zanahoria', 'Caldo casero'], nivel_fibra: 'Bajo', tip_digestivo: 'Ciruela al desayuno = barriga feliz garantizado.' },
+    5: { day: 'Viernes', desayuno: 'Platano en Leche de Arroz Casera', desayuno_detalle: { preparacion: 'Platano maduro + leche de arroz hecha en casa (arroz cocido licuado).', beneficios: { nutricional: 'Prebiotico + almidones', digestivo: 'Muy digestivo, sin lacteos' } }, almuerzo: 'Pejerrey Fresco con Arroz Blanco en Caldo', almuerzo_detalle: { preparacion: 'Pejerrey deshilachado fino. Arroz bien cocido en caldo vegetal rico.', beneficios: { nutricional: 'Omega 3 suave + carbos', digestivo: 'Digestivo total' } }, cena: 'Consomé de Pescado con Huevo Poche', cena_detalle: { preparacion: 'Consomé casero transparente. Huevo poche flotando suavemente.', beneficios: { nutricional: 'Proteina pura marina', digestivo: 'Cierre perfecto del dia' } }, ingredientes: ['Pejerrey', 'Platano', 'Arroz', 'Huevo'], nivel_fibra: 'Bajo', tip_digestivo: 'Leche de arroz casera > leche de vaca 100 veces mejor.' },
+    6: { day: 'Sabado', desayuno: 'Pera Cocida en Pure Suave', desayuno_detalle: { preparacion: 'Pera cocida sin cascara licuada + 100ml caldo vegetal. Como puding liquido.', beneficios: { nutricional: 'Sorbitol + minerales', digestivo: 'Laxante suave doble' } }, almuerzo: 'Bacalao Deshilachado con Fideos y Caldo', almuerzo_detalle: { preparacion: 'Bacalao cocido deshilachado fino. Fideos en caldo casero espeso.', beneficios: { nutricional: 'Proteina marina pura', digestivo: 'Facil digestion' } }, cena: 'Crema de Apio y Merluza', cena_detalle: { preparacion: 'Apio licuado + merluza desmechada. Todo en caldo casero reconfortante.', beneficios: { nutricional: 'Sodio natural + omega 3', digestivo: 'Suave cierre de semana' } }, ingredientes: ['Bacalao', 'Merluza', 'Apio', 'Fideos'], nivel_fibra: 'Bajo', tip_digestivo: 'Bacalao: el pescado mas antiinflamatorio que existe.' },
+    0: { day: 'Domingo', desayuno: 'Frutas Variadas en Caldo de Manzana', desayuno_detalle: { preparacion: 'Papaya + pera cocida en caldo de manzana casero. Jugo dulce y digestivo.', beneficios: { nutricional: 'Enzimas multiples', digestivo: 'Cierre de semana perfecto' } }, almuerzo: 'Sopa de Salmon con Vegetales Amarillos', almuerzo_detalle: { preparacion: 'Salmon en consomé casero. Zanahoria + calabaza licuadas finas.', beneficios: { nutricional: 'Omega 3 + betacarotenos', digestivo: 'Completo y suave' } }, cena: 'Caldo de Pescado Blanco Puro', cena_detalle: { preparacion: 'Consomé de pescado blanco casero. Cebollino fresco. Liquido y aromático.', beneficios: { nutricional: 'Colageno marino', digestivo: 'Recuperacion intestinal' } }, ingredientes: ['Salmon', 'Pescado blanco', 'Calabaza', 'Zanahoria'], nivel_fibra: 'Bajo', tip_digestivo: 'Cierre semana 2: el cuerpo de Enzo se regenera con salmon.' },
   },
   'Semana 3': {
-    1: { day: 'Lunes', desayuno: 'Mango maduro con Yogurt', desayuno_detalle: { preparacion: 'Mango en trozos sobre yogurt griego con canela.', beneficios: { nutricional: 'Vitamina C + Probioticos', digestivo: 'Enzimas de mango' } }, almuerzo: 'Cadera de Res con Pure de Papa', almuerzo_detalle: { preparacion: 'Cadera de res muy pequena con papa aplastada y caldo.', beneficios: { nutricional: 'Proteina + Hierro', digestivo: 'Almidones suaves' } }, cena: 'Crema de Zanahoria con Coco', cena_detalle: { preparacion: 'Zanahoria licuada con leche de coco y jengibre suave.', beneficios: { nutricional: 'Betacarotenos + TCM', digestivo: 'Antiinflamatorio' } }, ingredientes: ['Res (Cadera)', 'Papa', 'Zanahoria', 'Mango'], nivel_fibra: 'Medio', tip_digestivo: 'Semana 3: consolidando buenos habitos.' },
-    2: { day: 'Martes', desayuno: 'Huevo al Plato con Pera', desayuno_detalle: { preparacion: 'Huevo frito suave en oliva con pera rallada al lado.', beneficios: { nutricional: 'Proteina + Sorbitol', digestivo: 'Estomago activo' } }, almuerzo: 'Salmon con Espinaca Suave', almuerzo_detalle: { preparacion: 'Salmon al papillot con espinaca bebe al vapor.', beneficios: { nutricional: 'Omega 3 + Hierro vegetal', digestivo: 'Lubrica y nutre' } }, cena: 'Sopa de Lentejas Rojas', cena_detalle: { preparacion: 'Lentejas rojas sin piel hervidas con zanahoria y oliva.', beneficios: { nutricional: 'Proteina vegetal + Folatos', digestivo: 'Fibra sin irritacion' } }, ingredientes: ['Salmon', 'Espinaca', 'Lenteja Roja', 'Huevo'], nivel_fibra: 'Alto', tip_digestivo: 'Espinaca tierna: hierro + suavidad.' },
-    3: { day: 'Miercoles', desayuno: 'Platano maduro con Queso Fresco', desayuno_detalle: { preparacion: 'Platano maduro asado con queso fresco derretido.', beneficios: { nutricional: 'Potasio + Calcio', digestivo: 'Textura mucilaginosa' } }, almuerzo: 'Pollo al Coco con Arroz', almuerzo_detalle: { preparacion: 'Pollo guisado en leche de coco con arroz bien cocido.', beneficios: { nutricional: 'Proteina completa + TCM', digestivo: 'Antiinflamatorio' } }, cena: 'Pure de Guisantes Verdes', cena_detalle: { preparacion: 'Guisantes procesados con caldo de verdura y oliva.', beneficios: { nutricional: 'Proteina vegetal + Fibra', digestivo: 'Suave peristaltismo' } }, ingredientes: ['Pollo', 'Arroz', 'Platano', 'Guisantes'], nivel_fibra: 'Medio', tip_digestivo: 'El platano maduro es un prebiotico natural.' },
-    4: { day: 'Jueves', desayuno: 'Avena con Frutas', desayuno_detalle: { preparacion: 'Avena con mango y chia. Sin azucar.', beneficios: { nutricional: 'Fibra beta-glucano', digestivo: 'Barrido intestinal' } }, almuerzo: 'Res Cadera con Brocoli', almuerzo_detalle: { preparacion: 'Cadera tierna salteada con brocoli suave al vapor.', beneficios: { nutricional: 'Hierro + Vitamina C', digestivo: 'Sulforafano antiinflamatorio' } }, cena: 'Sopa de Pollo con Fideos', cena_detalle: { preparacion: 'Caldo de pollo con fideos finos y zanahoria triturada.', beneficios: { nutricional: 'Colageno + Proteina', digestivo: 'Reconstituyente intestinal' } }, ingredientes: ['Res (Cadera)', 'Brocoli', 'Pollo', 'Fideos'], nivel_fibra: 'Alto', tip_digestivo: 'Brocoli al vapor: vitamina C para absorber el hierro.' },
-    5: { day: 'Viernes', desayuno: 'Kiwi con Semillas de Chia', desayuno_detalle: { preparacion: 'Kiwi en mitades con chia hidratada encima.', beneficios: { nutricional: 'Vitamina C + Omega 3', digestivo: 'Actinidina digestiva' } }, almuerzo: 'Tilapia con Pure de Yuca', almuerzo_detalle: { preparacion: 'Tilapia al vapor con yuca bien cocida aplastada.', beneficios: { nutricional: 'Proteina + Almidones', digestivo: 'Muy tolerado' } }, cena: 'Yogurt con Compota', cena_detalle: { preparacion: 'Yogurt griego con compota de manzana y canela.', beneficios: { nutricional: 'Probioticos + Pectina', digestivo: 'Regula microbiota' } }, ingredientes: ['Tilapia', 'Yuca', 'Yogurt Griego', 'Kiwi'], nivel_fibra: 'Medio', tip_digestivo: 'Kiwi antes del desayuno: activa enzimas digestivas.' },
-    6: { day: 'Sabado', desayuno: 'Pera con Almendras', desayuno_detalle: { preparacion: 'Pera sin cascara con 5 almendras remojadas trituradas.', beneficios: { nutricional: 'Vitamina E + Sorbitol', digestivo: 'Lubricante y laxante' } }, almuerzo: 'Salmon con Quinoa y Espinaca', almuerzo_detalle: { preparacion: 'Salmon sobre quinoa con espinaca al vapor y limon.', beneficios: { nutricional: 'Proteina completa + Folatos', digestivo: 'Fibra prebiotica' } }, cena: 'Crema de Brocoli simple', cena_detalle: { preparacion: 'Brocoli licuado con caldo de pollo y aceite de oliva.', beneficios: { nutricional: 'Sulforafano + Vitamina K', digestivo: 'Antiinflamatorio potente' } }, ingredientes: ['Salmon', 'Quinoa', 'Espinaca', 'Brocoli'], nivel_fibra: 'Alto', tip_digestivo: 'Fin de semana: maximo Omega 3 con salmon.' },
-    0: { day: 'Domingo', desayuno: 'Frutas con Granola Suave', desayuno_detalle: { preparacion: 'Papaya y mango con granola sin gluten.', beneficios: { nutricional: 'Enzimas + Fibra', digestivo: 'Activa el sistema' } }, almuerzo: 'Pollo al Horno con Batata', almuerzo_detalle: { preparacion: 'Pollo al horno jugoso con batata asada.', beneficios: { nutricional: 'Proteina + Betacarotenos', digestivo: 'Suave y nutritivo' } }, cena: 'Sopa Pasada de Vegetales', cena_detalle: { preparacion: 'Mix de vegetales licuados con caldo y coco.', beneficios: { nutricional: 'Multinutrientes', digestivo: 'Ultra suave' } }, ingredientes: ['Pollo', 'Batata', 'Papaya', 'Mango'], nivel_fibra: 'Medio', tip_digestivo: 'Domingo sem 3: cuerpo recargado para la semana.' },
+    1: { day: 'Lunes', desayuno: 'Papaya Pura Liquida', desayuno_detalle: { preparacion: 'Papaya procesada con agua destilada 1:1. Jugo fresco digestivo.', beneficios: { nutricional: 'Papaina pura', digestivo: 'Comienza bien el dia' } }, almuerzo: 'Salmon Rosado con Sopa de Zanahoria Cremosa', almuerzo_detalle: { preparacion: 'Salmon deshilachado. Zanahoria licuada en caldo casero abundante.', beneficios: { nutricional: 'Omega 3 + betacarotenos', digestivo: 'Lubricacion + hidratacion' } }, cena: 'Consomé de Branzino con Fideos', cena_detalle: { preparacion: 'Caldo casero de branzino transparente. Fideos muy finos. Muy liquido.', beneficios: { nutricional: 'Colageno marino', digestivo: 'Sana mucosa intestinal' } }, ingredientes: ['Salmon', 'Branzino', 'Zanahoria', 'Fideos'], nivel_fibra: 'Bajo', tip_digestivo: 'Semana 3: consolidamos pescado diario.' },
+    2: { day: 'Martes', desayuno: 'Ciruela Pasa Procesada en Agua Tibia', desayuno_detalle: { preparacion: 'Ciruelas remojadas procesadas con agua de remojo. Desayuno laxante natural.', beneficios: { nutricional: 'Sorbitol activo', digestivo: 'Activa intestinos' } }, almuerzo: 'Merluza al Vapor con Pure de Calabaza Liquido', almuerzo_detalle: { preparacion: 'Merluza cocida deshilachada. Calabaza licuada en caldo casero espeso.', beneficios: { nutricional: 'Proteina + betacarotenos', digestivo: 'Suave pero potente' } }, cena: 'Sopa de Tilapia y Cebada', cena_detalle: { preparacion: 'Tilapia en caldo casero. Cebada cocida suave. Muy hidratante.', beneficios: { nutricional: 'Omega 3 + fibra soluble', digestivo: 'Regula naturalmente' } }, ingredientes: ['Merluza', 'Tilapia', 'Calabaza', 'Cebada'], nivel_fibra: 'Bajo', tip_digestivo: 'Ciruela + pescado = barriga sin problemas.' },
+    3: { day: 'Miercoles', desayuno: 'Pera Cocida en Caldo de Manzana', desayuno_detalle: { preparacion: 'Pera cocida licuada en caldo de manzana casero. Como puding laxante.', beneficios: { nutricional: 'Sorbitol + pectina', digestivo: 'Laxante doble suave' } }, almuerzo: 'Atun Fresco con Sopa de Cebada y Zanahoria', almuerzo_detalle: { preparacion: 'Atun deshilachado fino. Sopa base: cebada + zanahoria licuada + caldo.', beneficios: { nutricional: 'Omega 3 marino', digestivo: 'Prebiotico + hidratacion' } }, cena: 'Crema de Coliflor y Salmon', cena_detalle: { preparacion: 'Coliflor licuada + salmon desmechado. Base caldo casero rico.', beneficios: { nutricional: 'Vitaminas + Omega 3', digestivo: 'Ultra suave nocturno' } }, ingredientes: ['Atun', 'Salmon', 'Coliflor', 'Cebada'], nivel_fibra: 'Bajo', tip_digestivo: 'Pera + ciruela cada 2 dias: garantia digestiva.' },
+    4: { day: 'Jueves', desayuno: 'Kiwi Licuado en Agua de Coco', desayuno_detalle: { preparacion: 'Kiwi procesado + agua de coco natural. Jugo enzimático supremo.', beneficios: { nutricional: 'Actinidina + electrolitos', digestivo: 'Enzimas digestivas maximas' } }, almuerzo: 'Dorada Entera al Papillot con Consomé Ligero', almuerzo_detalle: { preparacion: 'Dorada pequeña al papillot 12 min. Servir en consomé casero transparente.', beneficios: { nutricional: 'Omega 3 + minerales marinos', digestivo: 'Digestion facil' } }, cena: 'Pure de Zanahoria y Tilapia con Caldo', cena_detalle: { preparacion: 'Zanahoria licuada + tilapia desmechada. Caldo casero abundant.', beneficios: { nutricional: 'Vitamina A + omega 3', digestivo: 'Reparador' } }, ingredientes: ['Dorada', 'Tilapia', 'Zanahoria', 'Agua de coco'], nivel_fibra: 'Bajo', tip_digestivo: 'Kiwi en desayuno = día digestivo perfecto.' },
+    5: { day: 'Viernes', desayuno: 'Mango Maduro en Agua Tibia', desayuno_detalle: { preparacion: 'Mango procesado + agua tibia destilada. Fresco y digestivo.', beneficios: { nutricional: 'Vitamina C + enzimas', digestivo: 'Activador metabolico' } }, almuerzo: 'Pejerrey con Sopa de Arroz Integral', almuerzo_detalle: { preparacion: 'Pejerrey deshilachado. Arroz integral cocido en caldo casero espeso.', beneficios: { nutricional: 'Omega 3 + fibra integral', digestivo: 'Prebiotico completo' } }, cena: 'Caldo de Merluza con Huevo Poche y Perejil', cena_detalle: { preparacion: 'Consomé de merluza casero. Huevo poche flotante. Perejil fresco.', beneficios: { nutricional: 'Colageno + proteina', digestivo: 'Cierre perfecto' } }, ingredientes: ['Pejerrey', 'Merluza', 'Arroz integral', 'Huevo'], nivel_fibra: 'Bajo', tip_digestivo: 'Viernes: refuerza la semana con máximo omega 3.' },
+    6: { day: 'Sabado', desayuno: 'Platano Maduro en Leche de Arroz Casera', desayuno_detalle: { preparacion: 'Platano maduro + leche de arroz hecha en casa (cocida lenta).', beneficios: { nutricional: 'Prebiotico + sin lacteos', digestivo: 'Suave y delicioso' } }, almuerzo: 'Bacalao Deshilachado con Fideos en Caldo', almuerzo_detalle: { preparacion: 'Bacalao cocido fino. Fideos en caldo casero reconfortante muy abundante.', beneficios: { nutricional: 'Proteina marina pura', digestivo: 'Antiinflamatorio' } }, cena: 'Crema de Apio y Pescado Blanco', cena_detalle: { preparacion: 'Apio licuado + pescado blanco desmechado en caldo casero.', beneficios: { nutricional: 'Sodio natural + omega 3', digestivo: 'Suave cierre' } }, ingredientes: ['Bacalao', 'Pescado blanco', 'Apio', 'Fideos'], nivel_fibra: 'Bajo', tip_digestivo: 'Bacalao: el antiinflamatorio marino definitivo.' },
+    0: { day: 'Domingo', desayuno: 'Frutas en Consomé Dulce', desayuno_detalle: { preparacion: 'Papaya + mango en consomé de frutas casero ligero. Muy liquido.', beneficios: { nutricional: 'Enzimas multiples', digestivo: 'Cierre suave' } }, almuerzo: 'Sopa de Salmon con Verduras Amarillas Cremosas', almuerzo_detalle: { preparacion: 'Salmon en consomé. Zanahoria + calabaza licuadas densamente.', beneficios: { nutricional: 'Omega 3 completo', digestivo: 'Nutritivo y suave' } }, cena: 'Consomé de Pescado Puro Transparente', cena_detalle: { preparacion: 'Caldo de pescado blanco casero 2+ horas. Transparente y aromatico.', beneficios: { nutricional: 'Colageno marino puro', digestivo: 'Regenera intestinos' } }, ingredientes: ['Salmon', 'Pescado blanco', 'Verduras', 'Consomé casero'], nivel_fibra: 'Bajo', tip_digestivo: 'Domingo S3: el intestino de Enzo esta completamente sanado.' },
   },
   'Semana 4': {
-    1: { day: 'Lunes', desayuno: 'Huevo Revuelto con Aguacate', desayuno_detalle: { preparacion: 'Huevo revuelto con aguacate pisado y tomate suave.', beneficios: { nutricional: 'Proteina + Grasas mono', digestivo: 'Lubricante natural' } }, almuerzo: 'Cadera de Res con Lentejas', almuerzo_detalle: { preparacion: 'Cadera tierna con crema de lentejas rojas sin piel.', beneficios: { nutricional: 'Doble Proteina + Hierro', digestivo: 'Fibra sin irritacion' } }, cena: 'Pure de Calabaza con Coco', cena_detalle: { preparacion: 'Calabaza al horno licuada con leche de coco.', beneficios: { nutricional: 'Betacarotenos + TCM', digestivo: 'Antiinflamatorio' } }, ingredientes: ['Res (Cadera)', 'Lenteja Roja', 'Aguacate', 'Calabaza'], nivel_fibra: 'Alto', tip_digestivo: 'Semana 4: alta proteina y fibra balanceada.' },
-    2: { day: 'Martes', desayuno: 'Batido de Salmon y Mango', desayuno_detalle: { preparacion: 'Batido de mango con proteina de salmon y chia.', beneficios: { nutricional: 'Omega 3 creativo', digestivo: 'Enzimas + fibra' } }, almuerzo: 'Quinoa con Pollo y Zanahoria', almuerzo_detalle: { preparacion: 'Quinoa con pollo desmechado fino y zanahoria cocida.', beneficios: { nutricional: 'Proteina completa x2', digestivo: 'Prebiotico de quinoa' } }, cena: 'Arroz con Leche y Canela', cena_detalle: { preparacion: 'Arroz cocido en leche con canela y un toque de vainilla.', beneficios: { nutricional: 'Calcio + Carbohidratos', digestivo: 'Reconfortante y calmante' } }, ingredientes: ['Salmon', 'Pollo', 'Quinoa', 'Arroz'], nivel_fibra: 'Medio', tip_digestivo: 'El arroz con leche: clasico suave para la noche.' },
-    3: { day: 'Miercoles', desayuno: 'Papaya con Semillas', desayuno_detalle: { preparacion: 'Papaya grande con semillas de calabaza y chia hidratada.', beneficios: { nutricional: 'Zinc + Papaina + Omega 3', digestivo: 'Enzimas triple accion' } }, almuerzo: 'Pescado al Rojo Suave con Brocoli', almuerzo_detalle: { preparacion: 'Tilapia con pimiento rojo suave y brocoli al vapor.', beneficios: { nutricional: 'Proteina + Vitamina C', digestivo: 'Antiinflamatorio completo' } }, cena: 'Caldo de Hueso con Fideos', cena_detalle: { preparacion: 'Caldo de hueso lento con fideos finos y perejil.', beneficios: { nutricional: 'Colageno + Glicina', digestivo: 'Sana la mucosa intestinal' } }, ingredientes: ['Tilapia', 'Brocoli', 'Caldo de hueso', 'Huevo'], nivel_fibra: 'Medio', tip_digestivo: 'Caldo de hueso: el mejor amigo del intestino.' },
-    4: { day: 'Jueves', desayuno: 'Yogurt con Pitahaya y Semillas', desayuno_detalle: { preparacion: 'Yogurt griego con pitahaya y semillas de lino molidas.', beneficios: { nutricional: 'Probioticos + Omega 3', digestivo: 'Laxante suave triple' } }, almuerzo: 'Cadera con Pure de Boniato', almuerzo_detalle: { preparacion: 'Carne de cadera tierna con boniato aplastado y oliva.', beneficios: { nutricional: 'Proteina + Betacarotenos', digestivo: 'Almidones suaves' } }, cena: 'Sopa de Pollo con Cilantro', cena_detalle: { preparacion: 'Caldo de pollo con cilantro fresco y papa suave.', beneficios: { nutricional: 'Colageno + Minerales', digestivo: 'Cilantro: detox suave' } }, ingredientes: ['Res (Cadera)', 'Pollo', 'Boniato', 'Yogurt Griego'], nivel_fibra: 'Medio', tip_digestivo: 'Boniato: version mejorada de la batata.' },
-    5: { day: 'Viernes', desayuno: 'Tostada con Aguacate y Huevo', desayuno_detalle: { preparacion: 'Pan integral con aguacate pisado y huevo poche.', beneficios: { nutricional: 'Grasas mono + Proteina', digestivo: 'Lubricante completo' } }, almuerzo: 'Salmon con Esparragos Suaves', almuerzo_detalle: { preparacion: 'Salmon a la plancha con esparragos al vapor muy suaves.', beneficios: { nutricional: 'Omega 3 + Inulina', digestivo: 'Prebiotico potente' } }, cena: 'Pure de Zanahoria y Batata', cena_detalle: { preparacion: 'Zanahoria y batata licuadas con caldo y canela.', beneficios: { nutricional: 'Doble betacaroteno', digestivo: 'Antiinflamatorio nocturno' } }, ingredientes: ['Salmon', 'Esparragos', 'Aguacate', 'Batata'], nivel_fibra: 'Alto', tip_digestivo: 'Esparragos: el mejor prebiotico del planeta.' },
-    6: { day: 'Sabado', desayuno: 'Granadilla y Frutos Rojos', desayuno_detalle: { preparacion: 'Granadilla con arandanos y frambuesas sobre yogurt.', beneficios: { nutricional: 'Antioxidantes maximos', digestivo: 'Barrido total' } }, almuerzo: 'Res Molida con Vegetales Rojos', almuerzo_detalle: { preparacion: 'Carne molida magra con pimiento y zanahoria suaves.', beneficios: { nutricional: 'Hierro + Vitamina C', digestivo: 'Absorcion de hierro mejorada' } }, cena: 'Crema de Guisantes con Menta', cena_detalle: { preparacion: 'Guisantes licuados con caldo, oliva y menta fresca.', beneficios: { nutricional: 'Proteina vegetal + Clorofila', digestivo: 'Menta: relaja el intestino' } }, ingredientes: ['Res (Molida)', 'Guisantes', 'Arandanos', 'Yogurt Griego'], nivel_fibra: 'Alto', tip_digestivo: 'Sabado S4: explosion de antioxidantes.' },
-    0: { day: 'Domingo', desayuno: 'Gran Desayuno Proteico', desayuno_detalle: { preparacion: 'Huevo, aguacate, jamon de pavo y fruta variada.', beneficios: { nutricional: 'Proteina completa triple', digestivo: 'Enzimas + lubricacion' } }, almuerzo: 'Festin de Salmon y Quinoa', almuerzo_detalle: { preparacion: 'Salmon jugoso sobre quinoa con espinaca y limon.', beneficios: { nutricional: 'Omega 3 + Proteina completa', digestivo: 'Fibra prebiotica total' } }, cena: 'Sopa Suave de Cierre', cena_detalle: { preparacion: 'Caldo de pollo con fideos y cilantro. Suave y reconfortante.', beneficios: { nutricional: 'Colageno + Aminoacidos', digestivo: 'Sana y cierra la semana' } }, ingredientes: ['Salmon', 'Quinoa', 'Huevo', 'Pavo'], nivel_fibra: 'Medio', tip_digestivo: 'Domingo S4: termina con todo el poder nutricional.' },
+    1: { day: 'Lunes', desayuno: 'Papaya con Agua de Coco Natural', desayuno_detalle: { preparacion: 'Papaya procesada + agua de coco natural. Jugo fresco digestivo premium.', beneficios: { nutricional: 'Papaina + electrolitos', digestivo: 'Enzimas + hidratacion' } }, almuerzo: 'Salmon Rosado con Sopa de Cebada Integral', almuerzo_detalle: { preparacion: 'Salmon deshilachado. Sopa: cebada integral + caldo vegetal abundante.', beneficios: { nutricional: 'Omega 3 + fibra soluble', digestivo: 'Prebiotico potente' } }, cena: 'Consomé de Branzino con Noodles', cena_detalle: { preparacion: 'Caldo casero de branzino. Noodles muy blandos. Muy liquido y reconfortante.', beneficios: { nutricional: 'Colageno marino', digestivo: 'Reparador nocturno' } }, ingredientes: ['Salmon', 'Branzino', 'Cebada', 'Noodles'], nivel_fibra: 'Bajo', tip_digestivo: 'Semana 4 final: refuerza todo el progreso con agua de coco.' },
+    2: { day: 'Martes', desayuno: 'Ciruela Pasa Licuada en Agua Tibia', desayuno_detalle: { preparacion: 'Ciruelas procesadas con agua tibia incluida. Desayuno laxante puro.', beneficios: { nutricional: 'Sorbitol activo', digestivo: 'Activa movimiento' } }, almuerzo: 'Merluza al Vapor con Crema de Calabaza', almuerzo_detalle: { preparacion: 'Merluza deshilachada. Calabaza licuada densamente en caldo casero.', beneficios: { nutricional: 'Proteina + betacarotenos', digestivo: 'Suave y lubricante' } }, cena: 'Sopa de Tilapia con Fideos Finos', cena_detalle: { preparacion: 'Tilapia en caldo casero espeso. Fideos muy finos. Muy reconfortante.', beneficios: { nutricional: 'Omega 3 + colageno', digestivo: 'Ultra hidratante' } }, ingredientes: ['Merluza', 'Tilapia', 'Calabaza', 'Fideos'], nivel_fibra: 'Bajo', tip_digestivo: 'Ciruela diaria hasta fin de mes = garantia digestiva.' },
+    3: { day: 'Miercoles', desayuno: 'Kiwi Fresco Licuado en Agua Tibia', desayuno_detalle: { preparacion: 'Kiwi procesado + agua tibia destilada. Jugo enzimático fresco.', beneficios: { nutricional: 'Actinidina pura', digestivo: 'Enzimas digestivas maximas' } }, almuerzo: 'Atun con Sopa de Arroz Blanco', almuerzo_detalle: { preparacion: 'Atun deshilachado fino. Arroz blanco en caldo casero abundante.', beneficios: { nutricional: 'Omega 3 + carbos', digestivo: 'Digestivo total' } }, cena: 'Crema de Coliflor y Salmon', cena_detalle: { preparacion: 'Coliflor licuada + salmon desmechado. Caldo casero reconfortante.', beneficios: { nutricional: 'Vitaminas + Omega 3', digestivo: 'Suave nocturno' } }, ingredientes: ['Atun', 'Salmon', 'Coliflor', 'Arroz'], nivel_fibra: 'Bajo', tip_digestivo: 'Kiwi cada mañana mantiene enzimas activas.' },
+    4: { day: 'Jueves', desayuno: 'Pera Cocida en Caldo Vegetal', desayuno_detalle: { preparacion: 'Pera cocida licuada en caldo vegetal tibia. Desayuno laxante doble.', beneficios: { nutricional: 'Sorbitol + minerales', digestivo: 'Activa intestinos' } }, almuerzo: 'Dorada al Papillot con Consomé Casero', almuerzo_detalle: { preparacion: 'Dorada 12 min al papillot. Servir en consomé casero transparente.', beneficios: { nutricional: 'Omega 3 completo', digestivo: 'Facil digestion' } }, cena: 'Pure de Zanahoria y Merluza', cena_detalle: { preparacion: 'Zanahoria licuada + merluza desmechada. Caldo casero abundante.', beneficios: { nutricional: 'Vitamina A + proteina marina', digestivo: 'Reparador' } }, ingredientes: ['Dorada', 'Merluza', 'Zanahoria', 'Caldo casero'], nivel_fibra: 'Bajo', tip_digestivo: 'Pera + ciruela + agua = trifecta laxante.' },
+    5: { day: 'Viernes', desayuno: 'Mango Maduro en Leche de Arroz Casera', desayuno_detalle: { preparacion: 'Mango fresco + leche de arroz hecha en casa. Suave y nutritivo.', beneficios: { nutricional: 'Enzimas + almidones', digestivo: 'Sin lacteos + delicioso' } }, almuerzo: 'Pejerrey con Sopa de Cebada y Zanahoria', almuerzo_detalle: { preparacion: 'Pejerrey deshilachado. Cebada + zanahoria licuada en caldo abundante.', beneficios: { nutricional: 'Omega 3 + fibra soluble', digestivo: 'Prebiotico completo' } }, cena: 'Caldo de Pescado Blanco con Huevo Poche', cena_detalle: { preparacion: 'Consomé casero de pescado. Huevo poche flotante. Perejil fresco.', beneficios: { nutricional: 'Colageno + proteina', digestivo: 'Cierre perfecto' } }, ingredientes: ['Pejerrey', 'Pescado blanco', 'Cebada', 'Huevo'], nivel_fibra: 'Bajo', tip_digestivo: 'Viernes: refuerza semana con omega 3 puro.' },
+    6: { day: 'Sabado', desayuno: 'Platano Maduro Procesado en Agua Tibia', desayuno_detalle: { preparacion: 'Platano maduro + agua tibia destilada. Bebida prebiotica reconfortante.', beneficios: { nutricional: 'Potasio + prebioticos', digestivo: 'Suave pero efectivo' } }, almuerzo: 'Bacalao Deshilachado con Sopa de Fideos', almuerzo_detalle: { preparacion: 'Bacalao cocido fino. Fideos en caldo casero espeso y aromatico.', beneficios: { nutricional: 'Proteina marina pura', digestivo: 'Antiinflamatorio' } }, cena: 'Crema de Apio y Tilapia', cena_detalle: { preparacion: 'Apio licuado + tilapia desmechada en caldo casero abundante.', beneficios: { nutricional: 'Sodio natural + omega 3', digestivo: 'Suave cierre' } }, ingredientes: ['Bacalao', 'Tilapia', 'Apio', 'Fideos'], nivel_fibra: 'Bajo', tip_digestivo: 'Bacalao: el marino antiinflamatorio definitivo.' },
+    0: { day: 'Domingo', desayuno: 'Frutas Variadas en Agua de Coco', desayuno_detalle: { preparacion: 'Papaya + pera + mango en agua de coco natural. Jugo frutal premium.', beneficios: { nutricional: 'Enzimas multiples', digestivo: 'Cierre perfecto de mes' } }, almuerzo: 'Sopa de Salmon con Verduras Cremosas', almuerzo_detalle: { preparacion: 'Salmon en consomé. Zanahoria + calabaza licuadas densamente.', beneficios: { nutricional: 'Omega 3 + betacarotenos', digestivo: 'Completo y reparador' } }, cena: 'Consomé de Pescado Puro Supremo', cena_detalle: { preparacion: 'Caldo de pescado blanco casero 3+ horas lento. Transparente, aromático.', beneficios: { nutricional: 'Colageno marino puro', digestivo: 'Regenera 100% intestinos' } }, ingredientes: ['Salmon', 'Pescado blanco', 'Verduras', 'Consomé'], nivel_fibra: 'Bajo', tip_digestivo: 'Domingo S4: Enzo completa ciclo 4 semanas totalmente sano.' },
   }
 };
